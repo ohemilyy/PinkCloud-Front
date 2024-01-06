@@ -18,6 +18,8 @@ export default function BlogPage() {
         redirect(`/dashboard/nodes/${data[0].identifier}/setup`)
     }
 
+    // const user = useUser()
+
     return (
         <div className="px-8 py-12 sm:py-16 md:px-20">
             {/* user.user && */(

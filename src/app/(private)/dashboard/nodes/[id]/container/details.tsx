@@ -102,7 +102,7 @@ export function NodeDetails() {
                                     </div>
                                 </div>
                             </div>
-                            {data && !isValidating && containers.length > 0 ? (
+                            {/* isLoaded && */data && !isValidating && containers.length > 0 ? (
                                 <div className="pb-6">
                                     <ul role="list" className="divide-y divide-neutral-900">
                                         {

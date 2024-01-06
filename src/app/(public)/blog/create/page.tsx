@@ -1,4 +1,18 @@
 export default async function BlogCreatePage() {
+    // const {userId} = auth();
+
+    // if (!userId) {
+    //     redirect("/");
+    // }
+
+    // const user = await clerkClient.users.getUser(userId);
+
+    // // @ts-ignore
+    // if (user.publicMetadata["role"] < 4) {
+
+    //     return null
+    // }
+    
     return (
         <div className="w-[70%] mx-[17.5%] bg-red-400 block">
             <div className={"flex"}>

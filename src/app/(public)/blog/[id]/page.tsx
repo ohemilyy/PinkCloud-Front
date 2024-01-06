@@ -16,6 +16,7 @@ const fetcher = async (...args: [string, RequestInit?]) => await fetch(...args).
 export default function PostPage() {
     const params = useParams();
     const id = params.id;
+    // const user = useUser();
 
     const route = `https://api.nopox.xyz/api/blog/post/${id}`
     console.log(route)

@@ -16,12 +16,6 @@ const navigation = [
         icon: <FontAwesomeIcon className="text-blue-400" icon={faServer}/>
     },
     {name: 'Blog', href: '/blog', current: false, icon: <FontAwesomeIcon className="text-pink-400" icon={faBlog}/>},
-    {
-        name: 'Marketplace',
-        href: '/marketplace',
-        current: false,
-        icon: <FontAwesomeIcon className="text-success" icon={faDollar}/>
-    },
 ]
 
 export default function Navbar({children} : any) {
