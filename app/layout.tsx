@@ -1,5 +1,4 @@
-import {ClerkProvider, SignedIn, SignedOut, UserButton} from "@clerk/nextjs";
-
+import { createClient } from '@supabase/supabase-js'
 import "./globals.css";
 import {Dosis} from "next/font/google";
 import Link from "next/link";
@@ -7,10 +6,9 @@ import Script from "next/script";
 import React from "react";
 import Navbar from "@/app/_components/navbar";
 
-import {dark} from "@clerk/themes";
 
 const inter = Dosis({subsets: ["latin"]});
-
+const supabase = createClient('https://qyyxkkbneewcycarhrey.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF5eXhra2JuZWV3Y3ljYXJocmV5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQ0ODU1MjAsImV4cCI6MjAyMDA2MTUyMH0.E8Mo1D9bsdBj6GWoRuRn5k9rBhKUBExO-LBWk_SQSTA')
 
 // @ts-ignore
 function classNames(...classes) {
