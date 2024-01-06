@@ -1,4 +1,3 @@
-import {OrganizationSwitcher} from "@clerk/nextjs";
 import React from "react";
 import Link from "next/link"
 
@@ -25,9 +24,7 @@ const navigation = [
     {name: 'Database Hive', href: '/dashboard/hive', current: false, icon: <FontAwesomeIcon icon={faHive}/>},
 ]
 
-
-// @ts-ignore
-function classNames(...classes) {
+function classNames(...classes : any) {
     return classes.filter(Boolean).join(' ')
 }
 
@@ -36,7 +33,6 @@ export default function RootLayout({
                                    }: {
     children: React.ReactNode;
 }) {
-    // @ts-ignore
     return (
         <div className="flex-col xl:flex-row flex min-h-fit w-full max-w-full">
             {<div
@@ -45,7 +41,7 @@ export default function RootLayout({
                     className="flex flex-row  xl:flex-col text-center xl:pb-12 dark:bg-neutral-900 xl:dark:bg-transparent mx-auto">
                     <div
                         className="xl:border-b-2 flex justify-center py-6 bg-neutral-100 dark:bg-neutral-900 dark:border-black border-neutral-300 px-12">
-                        <OrganizationSwitcher afterCreateOrganizationUrl="/dashboard"/>
+                        {/* <OrganizationSwitcher afterCreateOrganizationUrl="/dashboard"/> */}
                     </div>
                     {
 

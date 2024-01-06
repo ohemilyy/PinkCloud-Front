@@ -1,10 +1,9 @@
 "use client";
 
-import {useOrganization} from "@clerk/nextjs";
 import React from "react";
-import useSWR from 'swr'
+import useSWR from 'swr';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCloud, faCogs, faCube, faDashboard} from "@fortawesome/free-solid-svg-icons";
+import {faCogs, faCube, faDashboard} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import {faHeart} from "@fortawesome/free-regular-svg-icons";
 import {faDocker, faYoutube} from "@fortawesome/free-brands-svg-icons";
@@ -30,7 +29,7 @@ const InfoCard = ({title, value}: InfoCardProps) => (
 
 export function NodeDetails() {
     const router = useRouter()
-    const {isLoaded, organization} = useOrganization();
+    // const {isLoaded, organization} = useOrganization();
     const params = useParams();
     const id = params.id;
 
@@ -103,11 +102,10 @@ export function NodeDetails() {
                                     </div>
                                 </div>
                             </div>
-                            {isLoaded && data && !isValidating && containers.length > 0 ? (
+                            {data && !isValidating && containers.length > 0 ? (
                                 <div className="pb-6">
                                     <ul role="list" className="divide-y divide-neutral-900">
                                         {
-                                            // @ts-ignore
                                             containers.sort((first: any, second: any) => {
                                                 return (first.state == "SETUP" ? -10 : first.state == "OFFLINE" ? 199 : 0) - (second.state == "SETUP" ? -10 : second.state == "OFFLINE" ? 199 : 0)
                                             }).map((container: any) => {

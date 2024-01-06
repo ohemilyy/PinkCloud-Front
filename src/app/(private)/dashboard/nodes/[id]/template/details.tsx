@@ -1,6 +1,5 @@
 "use client";
 
-import {useOrganization} from "@clerk/nextjs";
 import React from "react";
 import useSWR from 'swr'
 import Link from "next/link";
@@ -26,7 +25,7 @@ const InfoCard = ({title, value}: InfoCardProps) => (
 
 export function TemplateDetails() {
     const router = useRouter()
-    const {isLoaded, organization} = useOrganization();
+    // const {isLoaded, organization} = useOrganization();
     const params = useParams();
     const id = params.id;
 
@@ -53,11 +52,10 @@ export function TemplateDetails() {
 
     return (
         <div className="mt-12">
-            {isLoaded && !isValidating && templates && templates.length > 0 ? (
+            {/* isLoaded && */ !isValidating && templates && templates.length > 0 ? (
                 <div className="pb-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 grid-flow-row gap-8">
                         {
-                            // @ts-ignore
                             templates.map((template: any) => {
                                 return (
                                     <Link

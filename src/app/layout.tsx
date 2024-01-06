@@ -1,7 +1,6 @@
 import { createClient } from '@supabase/supabase-js'
 import "./globals.css";
 import {Dosis} from "next/font/google";
-import Link from "next/link";
 import Script from "next/script";
 import React from "react";
 import Navbar from "@/components/Navbar";
@@ -10,8 +9,7 @@ import Navbar from "@/components/Navbar";
 const inter = Dosis({subsets: ["latin"]});
 const supabase = createClient('https://qyyxkkbneewcycarhrey.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF5eXhra2JuZWV3Y3ljYXJocmV5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQ0ODU1MjAsImV4cCI6MjAyMDA2MTUyMH0.E8Mo1D9bsdBj6GWoRuRn5k9rBhKUBExO-LBWk_SQSTA')
 
-// @ts-ignore
-function classNames(...classes) {
+function classNames(...classes : any) {
     return classes.filter(Boolean).join(' ')
 }
 
@@ -20,13 +18,6 @@ export default function RootLayout({
                                    }: {
     children: React.ReactNode;
 }) {
-    // @ts-ignore
-    // @ts-ignore
-    // @ts-ignore
-
-    // @ts-ignore
-
-    // @ts-ignore
     return (
         <html lang="en" className="transition-colors delay-100 duration-200 ease-in-out block max-w-[100vw]">
 
@@ -55,7 +46,7 @@ export default function RootLayout({
             content="@PinkCloudStudios"
         />
 
-        <ClerkProvider
+        {/* <ClerkProvider
             appearance={{
                 baseTheme: dark,
                 variables: {colorPrimary: "#000000"},
@@ -65,11 +56,11 @@ export default function RootLayout({
                     card: "bg-[#BBEEEAA]",
                 },
             }}
-        >
+        > */}
             <body
                 className={`${inter.className} min-h-screen flex flex-col bg-cover bg-neutral-100 dark:bg-neutral-900 dark:text-white`}>
             <Navbar>
-                <SignedIn>
+                {/* <SignedIn>
                     <span className="ml-2">
                       <UserButton afterSignOutUrl="/"/>
                     </span>
@@ -84,7 +75,7 @@ export default function RootLayout({
                     </span>
                         <img src="https://minotar.net/avatar/MHF_Question/32" height={32} width={32}/>
                     </Link>
-                </SignedOut>
+                </SignedOut> */}
 
 
             </Navbar>
@@ -126,7 +117,7 @@ export default function RootLayout({
                 </nav>
             </footer>
             </body>
-        </ClerkProvider>
+        {/* </ClerkProvider> */}
 
 
         <Script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js"/>

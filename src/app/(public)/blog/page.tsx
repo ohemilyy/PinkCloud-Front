@@ -1,6 +1,5 @@
 "use client"
 
-import {useUser} from "@clerk/nextjs";
 import {redirect} from "next/navigation";
 import Link from "next/link";
 import useSWR from "swr";
@@ -19,36 +18,31 @@ export default function BlogPage() {
         redirect(`/dashboard/nodes/${data[0].identifier}/setup`)
     }
 
-    const user = useUser()
-
-    // @ts-ignore
     return (
         <div className="px-8 py-12 sm:py-16 md:px-20">
-            {user.user && (
+            {/* user.user && */(
                 <div className="px-72">
                     <div className="flex-row flex">
                         <div className="flex-col flex">
                             <h1 className="text-3xl font-semibold">
-                                👋 Hi, {user.user.firstName || `Stranger`}
+                                👋 Hi, {/* user.user.firstName || */`Stranger`}
                             </h1>
                             <span>Welcome to our blog space!</span>
                         </div>
-                        {
-                            // @ts-ignore
+                        {/* {
                             user.user.publicMetadata["role"] >= 4 ? (
                                 <Link href="/blog/create"
                                       className="ml-auto btn text-green-400 border-green-600 opacity-80 dark:bg-neutral-800 text-xl rounded-none rounded-tr-lg rounded-bl-lg">
                                     Create Post
                                 </Link>
                             ) : (<></>)
-                        }
+                        } */}
                     </div>
 
 
                     <div className="grid grid-rows-4 grid-cols-3 gap-12 p-4">
                         {data && data.length > 0 ? (
-                            // @ts-ignore
-                            data.map((post) => (
+                            data.map((post: any) => (
                                 <Link key={post.key} href={`/blog/${post.key}`}
                                       className="card w-96 light:glass dark:bg-neutral-800 drop-shadow-lg">
                                     <figure><img

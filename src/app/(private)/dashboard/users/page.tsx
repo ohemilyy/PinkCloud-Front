@@ -1,6 +1,5 @@
 "use client"
 
-import {clerkClient, useUser} from "@clerk/nextjs"
 import React from 'react';
 
 interface UserDetailsProps {
@@ -8,25 +7,24 @@ interface UserDetailsProps {
 }
 
 export default function UsersPage() {
-    const [users, setUsers] = React.useState<any[]>([]);
+    // const [users, setUsers] = React.useState<any[]>([]);
 
-    const {user, isLoaded} = useUser()
+    // const {user, isLoaded} = useUser()
 
-    React.useEffect(() => {
-        const fetchUsers = async () => {
-            const userList = await clerkClient.organizations.getOrganizationMembershipList({
-                // @ts-ignore
-                organizationId: user?.organizationMemberships?.find((it) => it)?.organization.id
-            });
-            setUsers(userList);
-        };
+    // React.useEffect(() => {
+    //     const fetchUsers = async () => {
+    //         const userList = await clerkClient.organizations.getOrganizationMembershipList({
+    //             organizationId: user?.organizationMemberships?.find((it) => it)?.organization.id
+    //         });
+    //         setUsers(userList);
+    //     };
 
-        fetchUsers();
-    }, []);
+    //     fetchUsers();
+    // }, []);
 
     return (
         <div className="px-6 md:px-12">
-            <h1 className="text-3xl font-semibold">
+            {/* <h1 className="text-3xl font-semibold">
                 Users
             </h1>
             {
@@ -34,7 +32,7 @@ export default function UsersPage() {
             }
             {users.map((user) => (
                 <span>user.username</span>
-            ))}
+            ))} */}
         </div>
     );
 }

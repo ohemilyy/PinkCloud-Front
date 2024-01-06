@@ -1,6 +1,5 @@
 "use client"
 
-import {useUser} from "@clerk/nextjs";
 import useSWR from "swr";
 import React from "react";
 import {useParams} from "next/navigation";
@@ -15,8 +14,7 @@ const fetcher = async (...args: [string, RequestInit?]) => await fetch(...args).
 export default function DashboardPage() {
     const params = useParams();
     const id = params.id;
-    const user = useUser()
-
+    // const user = useUser()
 
     const route = `https://api.nopox.xyz/api/nodes/${id}`
     console.log(route)
@@ -29,7 +27,7 @@ export default function DashboardPage() {
 
     return (
         <div className="px-6 md:px-12">
-            {user && data && (
+            {/* user && */data && (
                 <>
                     <h1 className="text-3xl font-semibold">
                         Node Setup

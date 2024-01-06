@@ -1,6 +1,5 @@
 "use client";
 
-import {useOrganization} from "@clerk/nextjs";
 import React from "react";
 import useSWR from 'swr'
 import Link from "next/link";
@@ -26,7 +25,7 @@ const InfoCard = ({title, value}: InfoCardProps) => (
 
 export function TemplateDetails() {
     const router = useRouter()
-    const {isLoaded, organization} = useOrganization();
+    // const {isLoaded, organization} = useOrganization();
     const params = useParams();
     const id = params.id;
 
@@ -51,7 +50,7 @@ export function TemplateDetails() {
 
     return (
         <div className="">
-            {isLoaded && !isValidating && template ? (
+            {/* isLoaded && */!isValidating && template ? (
                 <div className="pb-6">
                     <h1 className="text-3xl font-semibold mb-12">
                         Editing template {template.templateKey}

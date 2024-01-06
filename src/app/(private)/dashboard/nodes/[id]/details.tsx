@@ -1,14 +1,12 @@
 "use client";
 
-import {useOrganization} from "@clerk/nextjs";
 import React from "react";
 import useSWR from 'swr'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faClipboard, faClock, faCogs, faCube, faGlobe, faWifi, faX} from "@fortawesome/free-solid-svg-icons";
+import {faClipboard, faClock, faCogs, faCube, faGlobe} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import {faDocker, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {useParams, useRouter} from "next/navigation";
-import {faHeart} from "@fortawesome/free-regular-svg-icons";
 
 declare global {
     interface Window {
@@ -30,7 +28,6 @@ const InfoCard = ({title, value}: InfoCardProps) => (
 
 export function NodeDetails() {
     const router = useRouter()
-    const {isLoaded, organization} = useOrganization();
     const params = useParams();
     const id = params.id;
 
@@ -230,7 +227,6 @@ export function NodeDetails() {
 
 export function AllocationDetails() {
     const router = useRouter()
-    const {isLoaded, organization} = useOrganization();
     const params = useParams();
     const id = params.id;
 
@@ -287,7 +283,6 @@ export function AllocationDetails() {
                 {!isValidating && allocations !== undefined ? (
                     <div className="grid grid-cols-7">
                         {
-                            // @ts-ignore
                             allocations.map((allocation: any) => {
                                 return (
                                     <div

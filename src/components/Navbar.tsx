@@ -24,14 +24,13 @@ const navigation = [
     },
 ]
 
-// @ts-ignore
-export default function Navbar({children}) {
+export default function Navbar({children} : any) {
     const [colorTheme, setTheme] = useDarkMode();
 
     return (
         <Disclosure as="nav"
                     className="pt-8 z-50 pb-4 bg-neutral-50 shadow-sm border-b-2 border-neutral-200 dark:border-black dark:bg-neutral-950">
-            {({open}) => (
+            {({open} : any) => (
                 <>
                     <div className="mx-auto pr-52">
                         <div className="relative flex h-16 items-center justify-between">
@@ -95,7 +94,6 @@ export default function Navbar({children}) {
                                 <div
                                     className="flex flex-row gap-x-4 bg-neutral-100 bg-opacity-10 px-3 py-2 rounded-tl-2xl rounded-br-2xl">
                                     <svg
-                                        // @ts-ignore
                                         onClick={() => setTheme("light")}
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="h-6 w-6"
@@ -129,7 +127,6 @@ export default function Navbar({children}) {
                                 <div
                                     className="flex flex-row gap-x-4 bg-neutral-400 bg-opacity-10 px-3 py-2 rounded-tr-2xl rounded-bl-2xl">
                                     <svg
-                                        // @ts-ignore
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="h-6 w-6 stroke-pink-400"
                                         fill="none"
@@ -144,7 +141,6 @@ export default function Navbar({children}) {
                                         />
                                     </svg>
                                     <svg
-                                        // @ts-ignore
                                         onClick={() => setTheme("dark")}
                                         xmlns="http://www.w3.org/2000/svg"
                                         className="h-6 w-6 stroke-neutral-400"

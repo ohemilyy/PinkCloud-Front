@@ -1,22 +1,4 @@
-import {auth, clerkClient} from "@clerk/nextjs";
-import {redirect} from "next/navigation";
-import React from "react";
-
 export default async function BlogCreatePage() {
-    const {userId} = auth();
-
-    if (!userId) {
-        redirect("/");
-    }
-
-    const user = await clerkClient.users.getUser(userId);
-
-    // @ts-ignore
-    if (user.publicMetadata["role"] < 4) {
-
-        return null
-    }
-
     return (
         <div className="w-[70%] mx-[17.5%] bg-red-400 block">
             <div className={"flex"}>
@@ -40,8 +22,7 @@ export default async function BlogCreatePage() {
                                        className="dark:bg-neutral-800 input input-bordered w-full max-w-xs text-neutral-100"/>
                             </span>
                             <input
-                                // @ts-ignore
-                                type="hidden" value={user?.firstName || ""} id="author" name="author"/>
+                                type="hidden" value={""} id="author" name="author"/>
                         </h1>
                         <button
                             className="btn rounded-none rounded-br-xl rounded-tl-xl text-sky-400 border-sky-400 border-1 dark:bg-neutral-800 ml-auto">Share

@@ -1,6 +1,5 @@
 "use client"
 
-import {useUser} from "@clerk/nextjs";
 import useSWR from "swr";
 import React from "react";
 import {useParams} from "next/navigation";
@@ -17,8 +16,6 @@ const fetcher = async (...args: [string, RequestInit?]) => await fetch(...args).
 export default function PostPage() {
     const params = useParams();
     const id = params.id;
-    const user = useUser()
-
 
     const route = `https://api.nopox.xyz/api/blog/post/${id}`
     console.log(route)
@@ -31,7 +28,7 @@ export default function PostPage() {
 
     return (
         <div className="w-[70%] mx-[17.5%] bg-red-400">
-            {user && data && (
+            {/* user && */data && (
                 <>
                     <div className={"flex"}>
                         <img className={"-mt-32 w-full"}

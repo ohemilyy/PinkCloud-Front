@@ -1,20 +1,18 @@
-import {auth, clerkClient} from "@clerk/nextjs";
-import {redirect} from "next/navigation";
 import {OrgDetails} from "./details";
 import React from "react";
 
 export default async function DashboardPage() {
-    const {userId} = auth();
+    // const {userId} = auth();
 
-    if (!userId) {
-        redirect("/");
-    }
+    // if (!userId) {
+    //     redirect("/");
+    // }
 
-    const user = await clerkClient.users.getUser(userId);
+    // const user = await clerkClient.users.getUser(userId);
 
     return (
         <div className="px-6 md:px-12">
-            {user && (
+            {/* user && */(
                 <>
                     <h1 className="text-3xl font-semibold">
                         Dashboard
