@@ -4,7 +4,7 @@ import {Dosis} from "next/font/google";
 import Link from "next/link";
 import Script from "next/script";
 import React from "react";
-import Navbar from "@/app/_components/navbar";
+import Navbar from "@/components/Navbar";
 
 
 const inter = Dosis({subsets: ["latin"]});

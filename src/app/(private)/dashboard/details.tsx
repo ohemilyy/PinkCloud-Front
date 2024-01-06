@@ -3,7 +3,6 @@
 import {useOrganization} from "@clerk/nextjs";
 import classNames from "classnames";
 import React, {useEffect, useState} from "react";
-import {CopyIcon} from "../icons";
 import "./prism.css";
 import useSWR from 'swr'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -11,6 +10,7 @@ import {faClipboard, faCogs, faCube, faX} from "@fortawesome/free-solid-svg-icon
 import Link from "next/link";
 import {faHeart} from "@fortawesome/free-regular-svg-icons";
 import {faDocker, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import { CopyIcon } from "../../../components/Icons";
 
 declare global {
     interface Window {

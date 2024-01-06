@@ -4,7 +4,7 @@ import {Disclosure} from '@headlessui/react'
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
 
 import {faBlog, faCloud, faCube, faDollar, faSearch, faServer} from '@fortawesome/free-solid-svg-icons'
-import useDarkMode from "@/app/utils/useDarkMode";
+import useDarkMode from "@/hooks/useDarkMode";
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 

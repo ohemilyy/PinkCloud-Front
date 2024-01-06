@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ["img.clerk.com"],
-    },
+  images: {
+    domains: ["img.clerk.com"],
+  },
+  output: 'standalone'
 };
 
 module.exports = nextConfig;
-
 
 // Injected content via Sentry wizard below
 

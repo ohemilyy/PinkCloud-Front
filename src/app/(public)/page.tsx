@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./home.css";
+import "./global.css";
 import React from "react";
 import {BiAlarmExclamation, BiCheck, BiCommand, BiSleepy, BiWrench} from "react-icons/bi";
 
