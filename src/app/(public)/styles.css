@@ -1,0 +1,82 @@
+/*#region Navlinks*/
+.navlink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.navlink.active::after {
+	content: '';
+	position: absolute;
+	bottom: 3px;
+	left: 0%;
+	transform: translateX(240%);
+	width: 15px;
+	height: 2px;
+	background-color: var(--fallback-bc,oklch(var(--bc)/1));
+}
+.navlink svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+/*#endregion*/
+
+/*#region Sidebar*/
+.drawer-toggle[type="checkbox"]:checked ~ .drawer-side > .drawer-overlay {
+  @apply backdrop-filter backdrop-brightness-[.75];
+  background-color: transparent;
+}
+.drawer-side .navlink h6 {
+  font-size: inherit;
+  line-height: inherit;
+}
+.drawer-side .navlink svg {
+  width: 20px;
+  height: 20px;
+}
+.drawer-side .navlink.active::after {
+  bottom: -2px;
+  left: 0px;
+  transform: translateX(210%);
+}
+/*#endregion*/
+
+/*#region Header*/
+header {
+  height: 65px;
+  width: 100%;
+  transition: top 0.2s ease-in-out;
+  position: fixed;
+  z-index: 2;
+  inset: 0;
+}
+header.header-up {
+  top: -65px !important;
+}
+@media (max-width: 410px) {
+  header .themeToggle {
+    display: none;
+  }
+}
+header .navlink {
+  @apply hidden md:flex;
+}
+header .navlink svg {
+  margin-right: 7px;
+  margin-bottom: 2px;
+}
+/*#endregion*/
+
+/*#region Footer*/
+footer .links {
+  margin-right: auto;
+  margin-left: auto;
+}
+footer .links h6 {
+  margin-bottom: 10px
+}
+footer .links a {
+  white-space: nowrap;
+}
+/*#endregion*/

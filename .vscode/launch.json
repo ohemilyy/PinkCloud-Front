@@ -13,7 +13,7 @@
       "request": "launch",
       "webRoot": "${workspaceFolder}/public",
       "url": "http://localhost:3000",
-      "runtimeExecutable": "/usr/lib/opera"
+      "runtimeExecutable": "/usr/lib/chromium/chromium"
     },
     {
       "name": "Next.js: debug full stack",
