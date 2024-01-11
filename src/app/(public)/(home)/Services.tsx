@@ -6,7 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { InView } from "react-intersection-observer";
 
 const Services = () => (
-  <section id="services" className="relative flex flex-col items-center justify-center text-center gap-2 py-10 px-8 sm:px-16 md:px-28 lg:px-36 xl:px-40">
+  <section id="services" className="relative flex flex-col items-center justify-center text-center gap-2 py-10 px-4 sm:px-16 md:px-28 lg:px-36 xl:px-40">
     <div className="target w-full h-full flex flex-col items-center gap-3 pb-10 out-of-view in-view">
       <span className="flex flex-row items-center justify-center font-bold gap-2"><h2>Our</h2><h2 className="text-rainbow">Services</h2></span>
       <h5>Here's a summary of what we provide you with.</h5>
