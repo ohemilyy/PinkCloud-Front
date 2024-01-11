@@ -8,12 +8,6 @@
   opacity: 1 !important;
 }
 
-section {
-  min-height: min(1920px, 100vh);
-  height: fit-content;
-  width: 100%
-}
-
 .positioned-divisor::before {
 	display: block;
 	content: "";
@@ -36,19 +30,6 @@ section {
   margin: 0 auto;
 	background: linear-gradient(to right, transparent 0%, oklch(var(--bc)/.25) 50%, transparent 100%);
 	transition: opacity .45s cubic-bezier(.6,.6,0,1);
-}
-
-.text-rainbow {
-	background: linear-gradient(
-    90deg,
-    oklch(var(--p)) 0%,
-    oklch(var(--n)) 50%,
-    oklch(var(--s)) 100%
-  );
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-fill-color: transparent;
-	text-shadow: none;
 }
 
 /*#region Hero*/

@@ -18,7 +18,7 @@ const Footer = () => (
 
         <div className="links flex flex-col">
           <h6><b>Legal</b></h6>
-          <HashLink href="">Terms of Use</HashLink>
+          <HashLink href="/terms">Terms of Service</HashLink>
           <HashLink href="">Privacy Policy</HashLink>
           <HashLink href="">Cookie Policy</HashLink>
           <HashLink href="">Tax Policy</HashLink>
