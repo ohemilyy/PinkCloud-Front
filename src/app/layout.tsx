@@ -6,7 +6,7 @@ const dosis = Dosis({subsets: ["latin"], variable: "--font-dosis"});
 
 export const metadata: Metadata = {
   title: 'PinkCloud - Voyager',
-  description: '',
+  description: 'PinkCloud elevates your online presence with our professional website freelancers',
 }
 
 export default function RootLayout({

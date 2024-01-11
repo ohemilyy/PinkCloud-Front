@@ -12,18 +12,20 @@ const Header = () => {
   const isShow = useShowOnScroll(headerRect);
 
   return (
-    <header ref={handleRect} className={"flex items-center justify-between w-full py-2 px-4 lg:px-24 bg-base-200 border-b-2 border-base-300" + (!isShow ? " header-up" : '')}>
-      <div className="flex flex-row items-center">
-        <label htmlFor="sidebar" tabIndex={0} className="flex md:hidden expand-btn btn btn-ghost btn-circle mr-4">
-          <FaBars />
-        </label>
+    <header ref={handleRect} className={"flex items-center justify-center w-full px-4 lg:px-24 bg-base-200 border-b-2 border-base-300" + (!isShow ? " header-up" : '')}>
+      <div className={"flex items-center justify-between w-full max-w-[1337px]"}>
+        <div className="flex flex-row items-center">
+          <label htmlFor="sidebar" tabIndex={0} className="flex md:hidden expand-btn btn btn-ghost btn-circle mr-4">
+            <FaBars />
+          </label>
 
-        <Logo className="mx-auto md:ml-0" href={'/'} />
+          <Logo className="mx-auto md:ml-0" href={'/'} />
+        </div>
+
+        <NavLinks />
+
+        <ThemeToggle className="themeToggle" />
       </div>
-
-      <NavLinks />
-
-      <ThemeToggle className="themeToggle" />
     </header>
   );
 };

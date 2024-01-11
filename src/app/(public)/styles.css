@@ -40,12 +40,17 @@
   left: 0px;
   transform: translateX(210%);
 }
+.sidebar-filter {
+  opacity: 60%;
+}
+[data-theme="light"] .sidebar-filter {
+  opacity: 40%;
+}
 /*#endregion*/
 
 /*#region Header*/
 header {
   height: 65px;
-  width: 100%;
   transition: top 0.2s ease-in-out;
   position: fixed;
   z-index: 2;

@@ -1,16 +1,18 @@
 import './styles.css';
 import Hero from './Hero';
+import Who from './Who';
 import Services from './Services';
 import Portfolio from './Portfolio';
-import About from './About';
+import Ready from './Ready';
 import FAQ from './FAQ';
 
 export default function Home() {
   return <>
     <Hero />
+    <Who />
     <Services />
     <Portfolio />
-    <About />
+    <Ready />
     <FAQ />
   </>;
 }

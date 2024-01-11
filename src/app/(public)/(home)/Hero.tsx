@@ -43,7 +43,7 @@ const Hero = () => {
   useKeyPress('s', () => onKeyPress(false));
   
   return (
-    <section ref={hero} id="hero" className="relative w-full flex flex-col gap-8 items-center">
+    <section ref={hero} id="hero" className="relative flex flex-col gap-8 items-center">
       <div className="absolute inset-0 h-full w-full justify-center bg-grad-filter" style={{zIndex: 0}}></div>
       
       <span className="w-fit flex flex-col items-center justify-center my-auto font-bold scale-75 sm:scale-95 md:scale-110">
