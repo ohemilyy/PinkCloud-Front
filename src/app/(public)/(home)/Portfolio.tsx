@@ -30,25 +30,37 @@ const Category = (props: { title: string; images: string[] }) => {
       <h2 className="font-bold mt-3">
         <span className="text-rainbow">{title}</span>
       </h2>
-      <Carousel items={images.map((src, index) => <Image key={index} alt="placeholder" src={src} width={800} height={600} className="w-full" />)} />
+      <Carousel
+        uId={title.toLowerCase().split(' ').join('-')}
+        items={images.map((src, index) => {
+          const srcSplit = src.split('/');
+          const splittedName = srcSplit[srcSplit.length - 1].split('.');
+          let fileName = splittedName.splice(splittedName.length - 1, 1).join('.');
+          fileName = fileName[0].toUpperCase() + fileName.slice(1);
+          return <Image key={index} alt={fileName} src={src} width={800} height={600} className="w-full" />;
+        })}
+      />
     </>
   );
 };
 
-const Carousel = (props: { items: JSX.Element[] }) => {
+const Carousel = (props: { uId?: string; items: JSX.Element[] }) => {
+  const uId = props.uId ?? "carousel";
   return (
     <div className="hidden sm:block w-full h-full md:px-10 lg:px-20 xl:px-40">
       <div className="relative flex items-center justify-center sm:w-full md:w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-[60%] max-w-[1600px] h-fit m-auto overflow-hidden rounded-2xl">
         <div className="carousel w-full h-fit">
-          {props.items.map((item, index) => (
-            <CarouselItem key={index} id={`carouselItem${index}`} content={item} />
-          ))}
+          {props.items.map((item, index) => {
+            const id = `${uId}${index}`;
+            return <CarouselItem key={index} id={id} content={item} />
+          })}
         </div>
 
         <div className="absolute flex justify-center py-2 gap-2 bottom-0">
-          {props.items.map((_, index) => (
-            <HashLink key={`b${index}`} href={`/#carouselItem${index}`} className="btn h-8 px-4 min-h-8 px-4">{index + 1}</HashLink>
-          ))}
+          {props.items.map((_, index) => {
+            const id = `${uId}${index}`;
+            return <HashLink key={index} href={`/#${id}`} className="btn h-8 px-4 min-h-8 px-4">{index + 1}</HashLink>
+          })}
         </div>
       </div>
     </div>
@@ -59,6 +71,8 @@ const CarouselItem = (props: { id: string; content: JSX.Element }) => (
   <div id={props.id} className="carousel-item relative flex flex-col w-full">
     {props.content}
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      {/* <HashLink href={`/#${uId}${(props.items.length + i - 1) % props.items.length}`} className="btn btn-circle">❮</HashLink> */}
+      {/* <HashLink href={`/#${uId}${(props.items.length + i + 1) % props.items.length}`} className="btn btn-circle">❯</HashLink> */}
     </div>
   </div>
 );

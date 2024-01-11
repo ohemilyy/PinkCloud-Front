@@ -28,18 +28,16 @@ const Hero = () => {
 
     const info = elemInfo.current;
     const scrollCtr = window.scrollY + window.innerHeight / 2;
-
-    if (
-      (scrollCtr > info.elemAbsTop && scrollCtr < info.elemAbsBottom) ||
-      (scrollCtr >= info.elemCtr && scrollCtr <= info.elemCtr + window.innerHeight && isUp) ||
-      (scrollCtr <= info.elemCtr && scrollCtr >= info.elemCtr - window.innerHeight && !isUp)
-    ) {
-      const to = isUp ? currHero.previousSibling : currHero.nextSibling;
-      if (to) forceScrollTo(to as Element);
-    } else {
+    if (scrollCtr > info.elemAbsTop && scrollCtr < info.elemAbsBottom) {
+      const to = (isUp ? currHero.previousSibling : currHero.nextSibling) as Element | null;
+      if (to) forceScrollTo(to);
+    } else if (
+        scrollCtr >= info.elemCtr && scrollCtr <= info.elemCtr + window.innerHeight && isUp ||
+        scrollCtr <= info.elemCtr && scrollCtr >= info.elemCtr - window.innerHeight && !isUp
+      ) {
       forceScrollTo(currHero);
     }
-  }, []);
+  }, [hero]);
 
   useKeyPress('ArrowUp', () => onKeyPress(true));
   useKeyPress('ArrowDown', () => onKeyPress(false));
