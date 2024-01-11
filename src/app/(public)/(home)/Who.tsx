@@ -30,7 +30,9 @@ const Who = () => (
             discord="ohemilyy"
             github="egirldevs"
             email="emily@pinkcloud.studio">
-       Hey there, I'm Emily, a 22-year-old transfeminine individual with a deep passion for astrophysics and computer science. Over the past seven years, I've immersed myself in the world of computer science, gaining a comprehensive understanding of cybersecurity and cyber threat intelligence. My journey includes both formal education and practical experience, and I'm currently majoring in astrophysics and computer science. As a neurodivergent individual, I bring a unique perspective to the tech realm, advocating for diversity and inclusivity. Eager to stay at the forefront of technology, I'm working towards Red Hat Enterprise Linux certification, aiming to make meaningful contributions to the dynamic field of computer science.
+        Hey there, I'm Emily! A 22-year-old transfeminine individual with a deep passion for Astrophysics and Computer Science (C.S.).<br />
+        Over the past seven years, I've immersed myself in the world of C.S., gaining a comprehensive understanding of Cybersecurity and Cyber Threat Intelligence. My journey includes both formal education and practical experience, and I'm currently majoring in Astrophysics and C.S.<br />
+        As a neurodivergent individual, I bring a unique perspective to the tech realm, advocating for diversity and inclusivity. Eager to stay at the forefront of technology, I'm working towards Red Hat Enterprise Linux certification, aiming to make meaningful contributions to the dynamic field of C.S.
       </Card>
 
       <Card img="/img/elaina.png"
@@ -54,7 +56,7 @@ const Who = () => (
 export default Who;
 
 const Card = (props: { img: string; name: string; discord: string; github: string; email: string; children: any; }) => (
-  <div className="relative bg-base-200 py-6 px-8">
+  <div className="relative bg-base-200 border-2 border-base-300 py-6 px-8">
     <InView as="div" className="absolute top-0 left-0 h-full w-full" threshold={.67} initialInView={false} fallbackInView={true}
       onChange={(inView, event) => event.target?.parentElement?.children[1]?.classList.toggle('in-view', inView)}></InView>
     
