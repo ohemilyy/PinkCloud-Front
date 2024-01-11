@@ -32,7 +32,7 @@ const useKeyScroll = (elem: React.MutableRefObject<HTMLElement | null>) => {
       ) {
       forceScrollTo(currElem);
     }
-  }, [elem.current]);
+  }, [elem]);
   useKeyPress('ArrowUp', () => onKeyPress(true));
   useKeyPress('ArrowDown', () => onKeyPress(false));
   useKeyPress('w', () => onKeyPress(true));

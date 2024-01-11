@@ -1,14 +1,15 @@
 import HashLink from "@/components/HashLink";
+import Image from "next/image"
 
 const Portfolio = () => (
   <section id="portfolio" className="flex flex-col items-center justify-center gap-7 text-center">
     <span className="flex flex-row items-center justify-center font-bold gap-2 mt-3"><h2>Previous</h2><h2 className="text-rainbow">Works</h2><h2>and</h2><h2 className="text-rainbow">References</h2></span>
 
     <Carousel items={[
-      <img src="/img/placeholder.png" className="w-full"/>,
-      <img src="/img/placeholder.png" className="w-full"/>,
-      <img src="/img/placeholder.png" className="w-full"/>,
-      <img src="/img/placeholder.png" className="w-full"/>,
+      <Image key={0} alt="placeholder" src="/img/placeholder.png" className="w-full"/>,
+      <Image key={1} alt="placeholder" src="/img/placeholder.png" className="w-full"/>,
+      <Image key={2} alt="placeholder" src="/img/placeholder.png" className="w-full"/>,
+      <Image key={3} alt="placeholder" src="/img/placeholder.png" className="w-full"/>,
     ]}></Carousel>
   </section>
 );

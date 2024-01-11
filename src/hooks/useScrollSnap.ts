@@ -19,7 +19,7 @@ export const forceScrollTo = (elem: Element) => {
     }
   }
   func()
-  window['exports']['sectScrollIntervalId'] = setInterval(func, 50);
+  //window['exports']['sectScrollIntervalId'] = setInterval(func, 50);
 }
 
 const useScrollSnap = (elem: MutableRefObject<HTMLElement | null>) => {
@@ -77,7 +77,7 @@ const useScrollSnap = (elem: MutableRefObject<HTMLElement | null>) => {
 
     const subscription = subscribe(hasScrolled);
     return () => subscription?.unsubscribe();
-  }, [subscribe, elem]);
+  }, [subscribe, elem, success]);
 
 };
 export default useScrollSnap;

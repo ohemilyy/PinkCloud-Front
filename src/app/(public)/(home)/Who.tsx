@@ -24,7 +24,7 @@ const Who = () => (
       </h5>
     </div>
 
-    <div className="flex flex-row flex-wrap gap-7">
+    <div className="flex flex-row flex-wrap justify-center gap-7">
       <Card img="/img/emily.png"
             name="CEO - Emily G."
             discord="ohemilyy"

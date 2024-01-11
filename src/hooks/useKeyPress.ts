@@ -17,5 +17,5 @@ export function useKeyPress(key: string, cb: (event: any) => any, options: Optio
     const event = options.event ?? 'keydown'
     t?.addEventListener(event, onKeyPress, options.eventOptions);
     return () => t?.removeEventListener(event, onKeyPress, options.eventOptions);
-  }, [target.current, options.event, options.eventOptions]);
+  }, [target, options.event, options.eventOptions, onKeyPress]);
 }
