@@ -138,7 +138,7 @@ export default function ToS() {
             These Terms of Service are governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law principles. <br />
             For any legal matters related to the use of our Services, you agree to submit to the exclusive jurisdiction of the state and federal courts located within Los Angeles, California. <br />
             Additionally, the parties acknowledge and agree that these Terms of Service shall not be governed by the United Nations Convention on Contracts for the International Sale of Goods. <br />
-            California internet laws, including but not limited to the California Consumer Privacy Act (CCPA), may also apply to the extent required by applicable law. <br />
+            California internet laws, including but not limited to the California Consumer Privacy Act (CCPA), may also apply to the extent required by applicable law.
           </p>
           <p>
             If you have any questions about these Terms, please contact us at <a className="text-secondary" href="mailto:info@pinkcloud.studio">info@pinkcloud.studio</a>.
