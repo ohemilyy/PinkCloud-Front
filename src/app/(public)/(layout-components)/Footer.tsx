@@ -12,13 +12,13 @@ const Footer = () => (
           <h6><b>Company</b></h6>
           <HashLink href="/about">About us</HashLink>
           <HashLink href="/contact">Contact</HashLink>
-          <HashLink href="/careers">Careers</HashLink>
+          <HashLink href="/talent">Careers</HashLink>
           <HashLink href="/press">Press Kit</HashLink>
         </div>
 
         <div className="links flex flex-col">
           <h6><b>Legal</b></h6>
-          <HashLink href="/terms">Terms of Use</HashLink>
+          <HashLink href="/terms">Terms of Service</HashLink>
           <HashLink href="/privacy">Privacy Policy</HashLink>
           <HashLink href="/cookies">Cookie Policy</HashLink>
           <HashLink href="/taxes">Tax Policy</HashLink>
@@ -27,14 +27,14 @@ const Footer = () => (
         <div className="links flex flex-col">
           <h6><b>Services</b></h6>
           <HashLink href="/services">All Services</HashLink>
-          <HashLink href="/status">Service Status</HashLink>
-          <HashLink href="/billing">Billing</HashLink>
+          <HashLink href="https://uptime.pinkcloud.studios">Service Status</HashLink>
+          <HashLink href="https://billing.pinkcloud.studios">Billing</HashLink>
         </div>
       </nav>
     </div>
 
     <div className="flex flex-col w-full px-4 py-3 items-start bg-base-300 gap-2">
-      <small className="flex flex-row flex-wrap items-center">Made with<FaHeart className="text-neutral mx-1.5 min-h-3.5 min-w-3.5"/>by Elaina. &copy; Copyright {`${new Date().getFullYear()}`}, PinkCloud Studios.</small>
+      <small className="flex flex-row flex-wrap items-center">Made with <FaHeart className="text-neutral mx-1.5 min-h-3.5 min-w-3.5"/> by Elaina. &copy; Copyright {`${new Date().getFullYear()}`}, PinkCloud Studios.</small>
     </div>
   </footer>
 );
