@@ -20,4 +20,5 @@ const Ready = () => (
     </div>
   </section>
 );
+
 export default Ready;

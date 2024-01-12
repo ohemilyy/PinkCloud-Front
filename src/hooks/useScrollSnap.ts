@@ -78,6 +78,6 @@ const useScrollSnap = (elem: MutableRefObject<HTMLElement | null>) => {
     const subscription = subscribe(hasScrolled);
     return () => subscription?.unsubscribe();
   }, [subscribe, elem, success]);
-
 };
+
 export default useScrollSnap;

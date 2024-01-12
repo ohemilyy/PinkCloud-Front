@@ -21,4 +21,5 @@ const HashLink = (props: { href: Url; children: any; className?: string; }) => (
     {props.children}
   </Link>
 );
+
 export default HashLink;

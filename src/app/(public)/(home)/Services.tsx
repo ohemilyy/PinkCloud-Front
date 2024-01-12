@@ -41,6 +41,7 @@ const Services = () => (
     </div>
   </section>
 );
+
 const Card = (props: { icon: JSX.Element; title: string; children: any; href: Url }) => (
   <div className="card relative p-8 bg-base-200 border-2 border-base-300 rounded-2xl transition-transform transform hover:scale-105 hover:shadow-md">
     <InView className="absolute top-0 left-0 h-full w-full" as="div" threshold={.67} initialInView={false} fallbackInView={true}

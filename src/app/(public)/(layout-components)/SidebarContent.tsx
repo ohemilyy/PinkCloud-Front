@@ -10,4 +10,5 @@ const SidebarContent = () => <>
     <ThemeToggle className="mt-auto mx-auto" />
   </div>  
 </>;
+
 export default SidebarContent;

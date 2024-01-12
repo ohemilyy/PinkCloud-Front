@@ -15,10 +15,10 @@ const useKeyScroll = (elem: React.MutableRefObject<HTMLElement | null>) => {
       const elemAbsBottom = elemAbsTop + elemRect.height;
       const elemCtr = elemAbsTop + elemRect.height / 2;
       elemInfo.current = {
-        elemAbsTop: elemAbsTop,
-        elemAbsBottom: elemAbsBottom,
-        elemCtr: elemCtr
-      }
+        elemAbsTop,
+        elemAbsBottom,
+        elemCtr
+      };
     }
 
     const info = elemInfo.current;
@@ -33,9 +33,11 @@ const useKeyScroll = (elem: React.MutableRefObject<HTMLElement | null>) => {
       forceScrollTo(currElem);
     }
   }, [elem]);
+  
   useKeyPress('ArrowUp', () => onKeyPress(true));
   useKeyPress('ArrowDown', () => onKeyPress(false));
   useKeyPress('w', () => onKeyPress(true));
   useKeyPress('s', () => onKeyPress(false));
 };
+
 export default useKeyScroll;
