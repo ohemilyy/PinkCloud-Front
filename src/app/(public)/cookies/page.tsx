@@ -19,34 +19,32 @@ export default function Cookies() {
             Cookies are small text files that are stored on your computer or mobile device when you visit a website. They are widely used to enhance user experience, improve website performance, and provide certain functionalities.
           </p>
           <h4 className="font-bold text-secondary">3. Types of Cookies</h4>
-          <p>
-            <ol>
-              <li>
-                <h4 className="font-bold text-secondary">Essential Cookies</h4>
-                <p>
-                  These cookies are necessary for the proper functioning of our website. They enable you to navigate our site and use its features. Without these cookies, certain services may not be provided. 
-                </p>
-              </li>
-              <li>
-                <h4 className="font-bold text-secondary">Analytical/Performance Cookies</h4>
-                <p>
-                  We use these cookies to collect information about how visitors use our website. The data collected is used to improve the performance and functionality of our site. These cookies do not collect personally identifiable information.
-                </p>
-              </li>
-              <li>
-                <h4 className="font-bold text-secondary">Functionality Cookies</h4>
-                <p>
-                  These cookies allow our website to remember choices you make and provide enhanced features. They may also be used to provide services you request, such as language preferences or personalized content.
-                </p>
-              </li>
-              <li>
-                <h4 className="font-bold text-secondary">Third-Party Cookies</h4>
-                <p>
-                  Some of our web pages may contain content from third-party websites (e.g., social media plugins) that may set their own cookies. We do not have control over the placement of these cookies, and you should review the third-party websites' cookie policies.  
-                </p>
-              </li>
-            </ol>
-          </p>
+          <ol className="inline-flex flex-col gap-2">
+            <li>
+              <h6 className="font-bold">Essential Cookies</h6>
+              <p>
+                These cookies are necessary for the proper functioning of our website. They enable you to navigate our site and use its features. Without these cookies, certain services may not be provided. 
+              </p>
+            </li>
+            <li>
+              <h6 className="font-bold">Analytical/Performance Cookies</h6>
+              <p>
+                We use these cookies to collect information about how visitors use our website. The data collected is used to improve the performance and functionality of our site. These cookies do not collect personally identifiable information.
+              </p>
+            </li>
+            <li>
+              <h6 className="font-bold">Functionality Cookies</h6>
+              <p>
+                These cookies allow our website to remember choices you make and provide enhanced features. They may also be used to provide services you request, such as language preferences or personalized content.
+              </p>
+            </li>
+            <li>
+              <h6 className="font-bold">Third-Party Cookies</h6>
+              <p>
+                Some of our web pages may contain content from third-party websites (e.g., social media plugins) that may set their own cookies. We do not have control over the placement of these cookies, and you should review the third-party websites' cookie policies.  
+              </p>
+            </li>
+          </ol>
           <h4 className="font-bold text-secondary">4. How to Manage Cookies</h4>
           <p>
             Most web browsers allow you to control cookies through their settings. You can usually find these settings in the "options" or "preferences" menu of your browser. However, disabling certain cookies may impact the functionality of our website.  
