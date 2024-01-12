@@ -73,8 +73,8 @@ const Card = (props: { img: string; name: string; discord: string; github: strin
           </div>
         </div>
 
-        <div className="w-full h-full flex flex-col justify-start items-start">
-          <h3>{props.name}</h3>
+        <div className="w-full h-full flex flex-col justify-start items-start overflow-hidden">
+          <h3 className="whitespace-nowrap">{props.name}</h3>
           <small className="flex items-center justify-center gap-1.5"><FaDiscord className="mt-1 h-4 w-4"/>{props.discord}</small>
           <Link href={`https://github.com/` + props.github}><small className="flex items-center justify-center gap-1.5"><FaGithub className="mt-1 h-4 w-4"/>{props.github}</small></Link>
           <Link href={`mailto:` + props.email}><small className="flex items-center justify-center gap-1.5"><IoIosMail className="mt-1 h-4 w-4"/>{props.email}</small></Link>

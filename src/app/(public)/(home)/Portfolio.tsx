@@ -25,7 +25,7 @@ const Portfolio = () => {
         <InView as="div" className="absolute top-0 left-0 h-full w-full" threshold={.67} initialInView={true} fallbackInView={true}
           onChange={(inView, event) => event.target?.parentElement?.children[1]?.classList.toggle('in-view', inView)}></InView>
 
-        <div className="carousel w-full h-fit out-of-view">
+        <div className="carousel w-full h-fit out-of-view in-view">
           {items.map((item, index) =>
             <CarouselItem key={index} carouselId={"main"} index={index} n={items.length} isArrows={true} content={item} />
           )}

@@ -36,7 +36,7 @@ const Footer = () => (
     <div className="flex flex-col w-full px-4 py-3 items-start bg-base-300 gap-2">
       <small>
         Made <span className="inline-flex items-end">
-        with <FaHeart className="text-neutral mx-1"/> by
+        with <FaHeart className="text-neutral mx-1 mb-0.5"/> by
         </span> Elaina.
         &copy; Copyright {`${new Date().getFullYear()}`}, PinkCloud Studios.
       </small>

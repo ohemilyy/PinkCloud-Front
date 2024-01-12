@@ -19,12 +19,9 @@ const Hero = () => {
           Expertise.<br />Innovation.<br />Client Focus.<br />Quality of Work.
         </h2>
 
-        <span className="ml-3 flex flex-nowrap items-center justify-start logo-rainbow p-0">
-          <h1>Pink</h1>
-          <h1 className="flex flex-nowrap items-center justify-center">
-            Cl<div id="cloudMask" className="mx-0.5 mt-1" />ud.
-          </h1>
-        </span>
+        <h1 className="inline-flex flex-nowrap items-end logo-rainbow m-0 p-0">
+          PinkCl<div id="cloudMask" className="mx-0.5 mb-[0.3125rem]" />ud
+        </h1> 
       </span>
 
       <div className="absolute inset-0 h-full w-full flex flex-col items-center justify-end arrow">

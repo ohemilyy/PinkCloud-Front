@@ -52,7 +52,7 @@
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   text-shadow: none;
-  width: 253px;
+  width: fit-content;
 
   background-size: 607.2px;
   animation: rainbowMove 3s ease infinite;
