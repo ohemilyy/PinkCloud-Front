@@ -1,6 +1,8 @@
+'use client'; 
 import React from "react";
 import Image from "next/image";
 import HashLink from "@/components/HashLink";
+import { InView } from "react-intersection-observer";
 
 const Portfolio = () => {
   const categories = [
@@ -15,12 +17,15 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio" className="flex flex-col items-center justify-center gap-7 text-center">
-      <span className="flex flex-row items-center justify-center font-bold gap-2 mt-3">
-        <h2>Previous</h2><h2 className="text-rainbow">Works</h2><h2>and</h2><h2 className="text-rainbow">References</h2>
-      </span>
+      <h2 className="font-bold mt-3">
+        Previous <span className="text-rainbow">Works</span> and <span className="text-rainbow">References</span>
+      </h2>
 
-      <div className="relative flex items-center justify-center sm:w-full max-w-[900px] h-fit mx-auto overflow-hidden rounded-2xl">
-        <div className="carousel w-full h-fit">
+      <div className="hidden sm:flex relative items-center justify-center sm:w-full max-w-[900px] h-fit mx-auto overflow-hidden rounded-2xl">
+        <InView as="div" className="absolute top-0 left-0 h-full w-full" threshold={.67} initialInView={true} fallbackInView={true}
+          onChange={(inView, event) => event.target?.parentElement?.children[1]?.classList.toggle('in-view', inView)}></InView>
+
+        <div className="carousel w-full h-fit out-of-view">
           {items.map((item, index) =>
             <CarouselItem key={index} carouselId={"main"} index={index} n={items.length} isArrows={true} content={item} />
           )}
