@@ -53,7 +53,6 @@ const Who = () => (
     </div>
   </section>
 );
-export default Who;
 
 const Card = (props: { img: string; name: string; discord: string; github: string; email: string; children: any; }) => (
   <div className="relative bg-base-200 border-2 border-base-300 py-6 px-8">
@@ -83,3 +82,5 @@ const Card = (props: { img: string; name: string; discord: string; github: strin
     </div>
   </div>
 );
+
+export default Who;

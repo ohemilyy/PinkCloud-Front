@@ -8,7 +8,7 @@ const Hero = () => {
   const hero = useRef<HTMLElement | null>(null);
   useScrollSnap(hero);
   useKeyScroll(hero);
-  
+
   const handleArrowClick = () => forceScrollTo(hero.current?.nextSibling as Element);
   return (
     <section ref={hero} id="hero" className="relative flex flex-col gap-8 items-center">

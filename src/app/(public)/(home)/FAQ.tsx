@@ -30,8 +30,6 @@ const FAQ = () => (
   </section>
 );
 
-export default FAQ;
-
 const Question = (props: { question: string; answer: string }) => (
   <div className="relative w-full">
     <InView
@@ -52,3 +50,5 @@ const Question = (props: { question: string; answer: string }) => (
     </div>
   </div>
 );
+
+export default FAQ;

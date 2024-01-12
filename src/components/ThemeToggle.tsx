@@ -15,7 +15,6 @@ const ThemeToggle = (props: { className?: string }) => {
     </div>
   );
 }
-export default ThemeToggle;
 
 const LightIcon = (props: { onClick?: MouseEventHandler<SVGSVGElement>; className?: string; }) => (
   <svg
@@ -52,3 +51,5 @@ const DarkIcon = (props: { onClick?: MouseEventHandler<SVGSVGElement>; className
     />
   </svg>
 );
+
+export default ThemeToggle;

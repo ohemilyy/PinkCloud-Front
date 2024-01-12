@@ -13,4 +13,5 @@ const Logo = (props: { href: Url; className?: string; }) => (
     <small className="smaller pl-0.5 pb-2 whitespace-nowrap">We provide you with the best.</small>
   </HashLink>
 );
+
 export default Logo;
