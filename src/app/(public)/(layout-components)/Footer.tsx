@@ -34,7 +34,12 @@ const Footer = () => (
     </div>
 
     <div className="flex flex-col w-full px-4 py-3 items-start bg-base-300 gap-2">
-      <small className="flex flex-row flex-wrap items-center">Made with <FaHeart className="text-neutral mx-1.5 min-h-3.5 min-w-3.5"/> by Elaina. &copy; Copyright {`${new Date().getFullYear()}`}, PinkCloud Studios.</small>
+      <small>
+        Made <span className="inline-flex items-end">
+        with <FaHeart className="text-neutral mx-1"/> by
+        </span> Elaina.
+        &copy; Copyright {`${new Date().getFullYear()}`}, PinkCloud Studios.
+      </small>
     </div>
   </footer>
 );
