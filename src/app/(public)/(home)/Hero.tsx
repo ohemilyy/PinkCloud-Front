@@ -1,51 +1,15 @@
 'use client';
-import { useKeyPress } from "@/hooks/useKeyPress";
 import useScrollSnap, { forceScrollTo } from "@/hooks/useScrollSnap";
-import { useCallback, useRef } from "react";
+import useKeyScroll from "@/hooks/useKeyScroll";
+import { useRef } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
 const Hero = () => {
   const hero = useRef<HTMLElement | null>(null);
-  const elemInfo = useRef<{ elemAbsTop: number; elemAbsBottom: number; elemCtr: number } | null>(null);
-
   useScrollSnap(hero);
-
-  const onKeyPress = useCallback((isUp: boolean) => {
-    const currHero = hero.current;
-    if (!currHero) return;
-
-    if (!elemInfo.current) {
-      const elemRect = currHero.getBoundingClientRect();
-      const elemAbsTop = elemRect.top - window['exports']['main']?.getBoundingClientRect().top;
-      const elemAbsBottom = elemAbsTop + elemRect.height;
-      const elemCtr = elemAbsTop + elemRect.height / 2;
-      elemInfo.current = {
-        elemAbsTop,
-        elemAbsBottom,
-        elemCtr,
-      };
-    }
-
-    const info = elemInfo.current;
-    const scrollCtr = window.scrollY + window.innerHeight / 2;
-    if (scrollCtr > info.elemAbsTop && scrollCtr < info.elemAbsBottom) {
-      const to = (isUp ? currHero.previousSibling : currHero.nextSibling) as Element | null;
-      if (to) forceScrollTo(to);
-    } else if (
-        scrollCtr >= info.elemCtr && scrollCtr <= info.elemCtr + window.innerHeight && isUp ||
-        scrollCtr <= info.elemCtr && scrollCtr >= info.elemCtr - window.innerHeight && !isUp
-      ) {
-      forceScrollTo(currHero);
-    }
-  }, [hero]);
-
-  useKeyPress('ArrowUp', () => onKeyPress(true));
-  useKeyPress('ArrowDown', () => onKeyPress(false));
-  useKeyPress('w', () => onKeyPress(true));
-  useKeyPress('s', () => onKeyPress(false));
-
+  useKeyScroll(hero);
+  
   const handleArrowClick = () => forceScrollTo(hero.current?.nextSibling as Element);
-
   return (
     <section ref={hero} id="hero" className="relative flex flex-col gap-8 items-center">
       <div className="absolute inset-0 h-full w-full justify-center bg-grad-filter" style={{ zIndex: 0 }}></div>
@@ -55,7 +19,7 @@ const Hero = () => {
           Expertise.<br />Innovation.<br />Client Focus.<br />Quality of Work.
         </h2>
 
-        <span className="ml-3 flex flex-wrap items-center justify-start logo-rainbow p-0">
+        <span className="ml-3 flex flex-nowrap items-center justify-start logo-rainbow p-0">
           <h1>Pink</h1>
           <h1 className="flex flex-nowrap items-center justify-center">
             Cl<div id="cloudMask" className="mx-0.5 mt-1" />ud.
