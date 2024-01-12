@@ -40,7 +40,11 @@ const Who = () => (
             discord="nekolynn"
             github="oestradiol"
             email="elaina@pinkcloud.studio">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Hello everyone! My name is Elaina. I am a 21-year-old girl.<br />
+        I love logics, math, sciences overall, and programming, hence why I chose Computer Science (C.S.) as a major. I also really like messing with a variety of interesting stuff, and I do programming for a living.<br />
+        To be more specific, I am a Full Stack Engineer, specialized in C# and TypeScript, but also experienced in a diversity of other languages, such as C/C++, Kotlin, Python, Dart, etc.<br />
+        I have been programming since I was 11, but recently (last 5~6 years) I have been more actively doing so. <br />
+        Focused on collaborating with my team and clients to deliver top-notch software written in clean and efficient code. Passionate about building successful products and stunning websites.
       </Card>
       
       <Card img="/img/nathan.png"
