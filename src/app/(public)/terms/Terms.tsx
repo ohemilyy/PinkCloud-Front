@@ -108,11 +108,50 @@ const Terms = () => {
               Extra fees will be negotiated and applied for each case.
               </li>
             </ul>
+            <h3 className="text-lg font-bold text-white">9. Limitation of Liability</h3>
+            <p>
+              <h2 className="text-lg font-bold text-white">Disclaimer of Damages</h2>
+              To the fullest extent permitted by applicable law, PinkCloud Studios ("Company") shall not be liable for any indirect, incidental, special, consequential, or exemplary damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, arising out of or in connection with the use or inability to use the services provided.  
+            </p>
+            <p>
+              <h2 className="text-lg font-bold text-white">Limitation of Direct Damages</h2>
+              In no event shall the total liability of the Company, whether in contract, warranty, tort (including negligence, whether active, passive, or imputed), product liability, strict liability, or other theory, arising out of or relating to the use of our services exceed the total fees paid by you to the Company during the six (6) months immediately preceding the event giving rise to the claim.
+            </p>
+            <p>
+              <h2 className="text-lg font-bold text-white">User Responsibilities:</h2>
+              You acknowledge and agree that the services provided by the Company are dependent on the accurate and timely provision of information and cooperation from you. The Company shall not be liable for any delays or deficiencies in performance caused by your failure to comply with such responsibilities.  
+            </p>
+            <p>
+              <h2 className="text-lg font-bold text-white">Third-Party Actions:</h2>
+              The Company shall not be liable for any damages resulting from the actions or omissions of third-party service providers, partners, or other users of our services.
+            </p>
+            <p>
+              <h2 className="text-lg font-bold text-white">Force Majeure:</h2>
+              The Company shall not be liable for any failure or delay in the performance of its obligations under these Terms of Service due to causes beyond its reasonable control, including but not limited to acts of God, war, terrorism, pandemics, government regulations, strikes, labour disputes, or any other force majeure event.  
+            </p>
+            <p>
+              <h2 className="text-lg font-bold text-white">No Consequential Damages:</h2>
+              In no event shall the Company be liable for any consequential, incidental, indirect, special, or punitive damages, even if advised of the possibility of such damages.
+            </p>
+            <p>
+              <h2 className="text-lg font-bold text-white">Allocation of Risk:</h2>
+              The limitations of liability set forth in this section reflect the allocation of risk between the parties and shall survive and apply even if any limited remedy specified in these Terms of Service is found to have failed its essential purpose.
+            </p>
+            <h3 className="text-lg font-bold text-white">10. Governing Law</h3>
+            <p>
+            These Terms of Service are governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law principles.
+            </p>
+            <p>
+            For any legal matters related to the use of our Services, you agree to submit to the exclusive jurisdiction of the state and federal courts located within Los Angeles, California. 
+            </p>
+            <p>
+            Additionally, the parties acknowledge and agree that these Terms of Service shall not be governed by the United Nations Convention on Contracts for the International Sale of Goods.
+            </p>
+            <p>
+            California internet laws, including but not limited to the California Consumer Privacy Act (CCPA), may also apply to the extent required by applicable law.
+            </p>
 
 
-
-
-Extra fees will be negotiated and applied for each case.
 
             <p>
               If you have any questions about these Terms, please contact us at <a href="mailto:info@pinkcloud.studio">info@pinkcloud.studio</a>.
