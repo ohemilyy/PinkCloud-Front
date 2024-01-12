@@ -1,4 +1,5 @@
 'use client';
+import HashLink from "@/components/HashLink";
 import { FaDiscord } from "react-icons/fa6";
 import { InView } from "react-intersection-observer";
 
@@ -11,12 +12,12 @@ const Ready = () => (
       <div className="cloud" />
       <span className="flex flex-row flex-wrap items-center justify-center gap-2 mt-3"><h2>Ready to fly on our</h2><h2 className="text-rainbow">PinkCloud?</h2></span>
       <p>Contact us on Discord, and let's see what wonders wait for you.</p>
-      <button className="btn btn-outline btn-secondary min-h-fit h-fit px-5 py-2.5 mt-7">
+      <HashLink href={process.env.discordInvite ?? '/'} className="btn btn-outline btn-secondary min-h-fit h-fit px-5 py-2.5 mt-7">
         <div className="flex flex-row justify-center items-center pb-0.5 gap-1.5">
           <FaDiscord className="mt-0.5 h-5 w-5"/>
           <span>Discord</span>
         </div>
-      </button>
+      </HashLink>
     </div>
   </section>
 );

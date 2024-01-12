@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone'
+  output: 'standalone',
+  env: {
+    discordInvite: 'https://discord.gg/q35KzNz4z9',
+  },
 }
 
 module.exports = nextConfig

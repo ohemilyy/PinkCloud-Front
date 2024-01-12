@@ -10,24 +10,25 @@ const Footer = () => (
       <nav className="flex flex-row flex-wrap justify-between gap-12 md:gap-16 lg:gap-28 xl:gap-40 2xl:gap-52">
         <div className="links flex flex-col">
           <h6><b>Company</b></h6>
-          <HashLink href="">About us</HashLink>
-          <HashLink href="">Contact</HashLink>
-          <HashLink href="">Careers</HashLink>
-          <HashLink href="">Press Kit</HashLink>
+          <HashLink href="/about">About us</HashLink>
+          <HashLink href="/contact">Contact</HashLink>
+          <HashLink href="/careers">Careers</HashLink>
+          <HashLink href="/press">Press Kit</HashLink>
         </div>
 
         <div className="links flex flex-col">
           <h6><b>Legal</b></h6>
-          <HashLink href="">Terms of Use</HashLink>
-          <HashLink href="">Privacy Policy</HashLink>
-          <HashLink href="">Cookie Policy</HashLink>
-          <HashLink href="">Tax Policy</HashLink>
+          <HashLink href="/terms">Terms of Use</HashLink>
+          <HashLink href="/privacy">Privacy Policy</HashLink>
+          <HashLink href="/cookies">Cookie Policy</HashLink>
+          <HashLink href="/taxes">Tax Policy</HashLink>
         </div>
 
         <div className="links flex flex-col">
           <h6><b>Services</b></h6>
-          <HashLink href="">Service Status</HashLink>
-          <HashLink href="">Billing</HashLink>
+          <HashLink href="/services">All Services</HashLink>
+          <HashLink href="/status">Service Status</HashLink>
+          <HashLink href="/billing">Billing</HashLink>
         </div>
       </nav>
     </div>

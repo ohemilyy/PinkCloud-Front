@@ -9,13 +9,13 @@ import HashLink from "@/components/HashLink";
 
 const Services = () => (
   <section id="services" className="relative flex flex-col items-center justify-center text-center gap-2 py-10 px-8 sm:px-16 md:px-28 lg:px-36 xl:px-40">
-    <div className="w-full flex flex-col items-center gap-3 pb-10">
+    <div className="w-full flex flex-col items-center gap-3 pb-10 px-4">
       <span className="flex flex-row items-center justify-center font-bold gap-2">
         <h2>Our</h2>
         <h2 className="text-rainbow">Services</h2>
       </span>
       <h5>Here's a summary of what we provide you with.</h5>
-      <HashLink href={""} className="see-link font-bold gap-1.5 mt-auto">
+      <HashLink href="/services" className="see-link font-bold gap-1.5 mt-auto">
         <h6>( All Services )</h6>
       </HashLink>
     </div>
