@@ -12,4 +12,5 @@ const Sidebar = (props: { barClass?: string; barContent: any; className?: string
     {props.children}
   </main>
 </>;
+
 export default Sidebar;

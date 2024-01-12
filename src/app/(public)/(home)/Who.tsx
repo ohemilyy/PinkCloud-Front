@@ -18,9 +18,9 @@ const Who = () => (
               Cl<FaCloud className="mx-0.5 mt-0.5 cloud-filter"/>ud
             </span>
           </span>
-          <span className="whitespace-nowrap">is an US-based...</span>
+          <span className="whitespace-nowrap">is a US-based...</span>
         </span>
-        <span>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+        <span>development company dedicated to delivering innovative and tailored solutions for a variety of digital needs. Specializing in web development, software application development, and a range of other development services, we take pride in our commitment to excellence and client satisfaction.</span>
       </h5>
     </div>
 
@@ -30,7 +30,9 @@ const Who = () => (
             discord="ohemilyy"
             github="egirldevs"
             email="emily@pinkcloud.studio">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Hey there, I'm Emily! A 22-year-old transfeminine individual with a deep passion for Astrophysics and Computer Science (C.S.).<br />
+        Over the past seven years, I've immersed myself in the world of C.S., gaining a comprehensive understanding of Cybersecurity and Cyber Threat Intelligence. My journey includes both formal education and practical experience, and I'm currently majoring in Astrophysics and C.S.<br />
+        As a neurodivergent individual, I bring a unique perspective to the tech realm, advocating for diversity and inclusivity. Eager to stay at the forefront of technology, I'm working towards Red Hat Enterprise Linux certification, aiming to make meaningful contributions to the dynamic field of C.S.
       </Card>
 
       <Card img="/img/elaina.png"
@@ -51,10 +53,9 @@ const Who = () => (
     </div>
   </section>
 );
-export default Who;
 
 const Card = (props: { img: string; name: string; discord: string; github: string; email: string; children: any; }) => (
-  <div className="relative bg-base-200 py-6 px-8">
+  <div className="relative bg-base-200 border-2 border-base-300 py-6 px-8">
     <InView as="div" className="absolute top-0 left-0 h-full w-full" threshold={.67} initialInView={false} fallbackInView={true}
       onChange={(inView, event) => event.target?.parentElement?.children[1]?.classList.toggle('in-view', inView)}></InView>
     
@@ -81,3 +82,5 @@ const Card = (props: { img: string; name: string; discord: string; github: strin
     </div>
   </div>
 );
+
+export default Who;
