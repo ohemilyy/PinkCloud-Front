@@ -48,7 +48,7 @@ const config: Config = {
           "accent": "#DDFF69",
           "info": "#69daff",
           "success": "#69ff69",
-          "warning": "#ffcd69",
+          "warning": "#ffba30",
           "error": "#ff6969",
           "base-100": "#fbf7fc", // Inverse of dark base-300 hued back to neutral
           "base-200": "#f6f0fa", // Inverse of dark base-200 hued back to neutral
