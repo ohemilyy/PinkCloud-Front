@@ -8,20 +8,16 @@ import Link from "next/link";
 const Who = () => (
   <section id="who" className="relative flex flex-col items-center justify-center gap-12 py-10 lg:pt-0 px-8 sm:px-16 md:px-28 lg:px-36 xl:px-40">
     <div className="flex flex-col items-center justify-center text-center w-full h-fit gap-4 out-of-view in-view">
-      <span className="flex flex-row items-center justify-center font-bold gap-2 mt-3"><h2 className="text-rainbow">Who</h2><h2>are we?</h2></span>
-    
-      <h5 className="flex flex-col items-center justify-center gap-1.5 max-w-[675px]">
-        <span className="flex items-center justify-center gap-1.5 leading-none mb-[-5px]">
-          <span className="flex items-center justify-center text-primary p-0">
-            Pink
-            <span className="flex items-center justify-center">
-              Cl<FaCloud className="mx-0.5 mt-0.5 cloud-filter"/>ud
-            </span>
-          </span>
-          <span className="whitespace-nowrap">is a US-based...</span>
-        </span>
-        <span>development company dedicated to delivering innovative and tailored solutions for a variety of digital needs. Specializing in web development, software application development, and a range of other development services, we take pride in our commitment to excellence and client satisfaction.</span>
-      </h5>
+      <h2 className="font-bold mt-3">
+        <span className="text-rainbow">Who</span> are we?
+      </h2>
+
+      <h5 className="max-w-[675px]">
+          <span className="inline-flex items-end text-primary">
+            PinkCl<FaCloud className="mx-0.5 mb-0.5 cloud-filter"/>ud
+          </span> is a US-based development company dedicated to delivering innovative and tailored solutions for a variety of digital needs.
+          Specializing in web development, software application development, and a range of other development services, we take pride in our commitment to excellence and client satisfaction.
+      </h5> 
     </div>
 
     <div className="flex flex-row flex-wrap justify-center gap-7">
@@ -40,7 +36,11 @@ const Who = () => (
             discord="nekolynn"
             github="oestradiol"
             email="elaina@pinkcloud.studio">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Hello everyone! My name is Elaina. I am a 21-year-old girl.<br />
+        I love logics, math, sciences overall, and programming, hence why I chose Computer Science (C.S.) as a major. I also really like messing with a variety of interesting stuff, and I do programming for a living.<br />
+        To be more specific, I am a Full Stack Engineer, specialized in C# and TypeScript, but also experienced in a diversity of other languages, such as C/C++, Kotlin, Python, Dart, etc.<br />
+        I have been programming since I was 11, but recently (last 5~6 years) I have been more actively doing so. <br />
+        Focused on collaborating with my team and clients to deliver top-notch software written in clean and efficient code. Passionate about building successful products and stunning websites.
       </Card>
       
       <Card img="/img/nathan.png"
@@ -48,7 +48,9 @@ const Who = () => (
             discord="nopox"
             github="Nopock"
             email="nathan@pinkcloud.studio">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Hey folks! I am Nathan, a 16-year-old Software Engineer and Infrastructure Manager hailing from California. My passion lies in the continuous pursuit of knowledge, particularly in exploring new frameworks and discovering innovative software solutions.<br />
+        Over the past two years, I have honed my programming skills in Java and Kotlin, with a primary emphasis on backend development.<br />
+        Specializing in frameworks such as Ktor and Spring Boot, I am dedicated to assisting clients in constructing robust backends and optimizing infrastructure. My commitment to excellence and enthusiasm for staying at the forefront of technological advancements drive me to contribute effectively to any project I undertake.
       </Card>
     </div>
   </section>

@@ -13,7 +13,7 @@ export default function PublicLayout({
     <Sidebar
       barClass="flex flex-col items-center text-center p-6 w-3/5 h-full backdrop-filter backdrop-blur-sm"
       barContent={<SidebarContent />}
-      className="flex flex-col items-center justify-between w-full h-full overflow-y-auto overflow-x-hidden relative bg-base-100"
+      className="flex flex-col items-center justify-between w-full h-full min-h-screen overflow-y-auto overflow-x-hidden relative bg-base-100"
     >
       <Header />
       {children}
