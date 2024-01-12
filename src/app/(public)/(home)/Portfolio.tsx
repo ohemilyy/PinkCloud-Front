@@ -6,7 +6,7 @@ import { InView } from "react-intersection-observer";
 
 const Portfolio = () => {
   const categories = [
-    { title: "Infrastructure Management", images: ["/img/refinedev.png", "/img/scala.png", "/img/esta.png", "/img/placeholder.png"] },
+    { title: "Infrastructure Management", images: ["/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png"] },
     { title: "Software Development", images: ["/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png"] },
     { title: "Website Development", images: ["/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png"] },
   ];
