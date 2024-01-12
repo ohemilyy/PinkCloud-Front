@@ -11,13 +11,13 @@ export default function Privacy() {
         </p>
         <div className="flex flex-col md:gap-y-4 mt-10">
           <p>
-          Welcome to PinkCloud Studios ("Company," "Collective," "we," "us," or "our" ). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our website, products, and services (collectively, the "Services"). By using our Services, you agree to the terms of this Privacy Policy.
+            Welcome to PinkCloud Studios ("Company," "Collective," "we," "us," or "our" ). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our website, products, and services (collectively, the "Services"). By using our Services, you agree to the terms of this Privacy Policy.
           </p>
           <h4 className="font-bold text-secondary">1. Acceptance of Terms</h4>
           <p>
             By using our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service, as well as our Privacy Policy.
           </p>
-          </div>
+        </div>
       </div>
     </section>
   );

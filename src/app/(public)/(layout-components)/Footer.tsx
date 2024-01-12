@@ -13,14 +13,14 @@ const Footer = () => (
           <HashLink href="/about">About us</HashLink>
           <HashLink href="/contact">Contact</HashLink>
           <HashLink href="/talent">Careers</HashLink>
-          <HashLink href="/presskit">Press Kit</HashLink>
+          <HashLink href="/press">Press Kit</HashLink>
         </div>
 
         <div className="links flex flex-col">
           <h6><b>Legal</b></h6>
           <HashLink href="/terms">Terms of Service</HashLink>
           <HashLink href="/privacy">Privacy Policy</HashLink>
-          <HashLink href="/cookie">Cookie Policy</HashLink>
+          <HashLink href="/cookies">Cookie Policy</HashLink>
           <HashLink href="/tax">Tax Policy</HashLink>
         </div>
 
@@ -33,7 +33,7 @@ const Footer = () => (
     </div>
 
     <div className="flex flex-col w-full px-4 py-3 items-start bg-base-300 gap-2">
-      <small className="flex flex-row flex-wrap items-center">Made with<FaHeart className="text-neutral mx-1.5 min-h-3.5 min-w-3.5"/>from NA & SA. &copy; Copyright {`${new Date().getFullYear()}`}, PinkCloud Studios LLC.</small>
+      <small className="flex flex-row flex-wrap items-center">Made with<FaHeart className="text-neutral mx-1.5 min-h-3.5 min-w-3.5"/> by Elaina. &copy; Copyright {`${new Date().getFullYear()}`}, PinkCloud Studios LLC.</small>
     </div>
   </footer>
 );
