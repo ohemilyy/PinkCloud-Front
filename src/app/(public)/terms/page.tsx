@@ -1,6 +1,6 @@
 import './styles.css';
 
-export default function ToS() {
+export default function Terms() {
   return (
     <section id="terms" className="flex flex-col items-center justify-center gap-y-6 w-full h-full p-16 pt-32">
       <div className="flex flex-col gap-y-2 max-w-[1180px]">
