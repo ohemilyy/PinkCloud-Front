@@ -10,7 +10,7 @@ const NavLinks = () => {
   const navLinks = [
     { href: "/dashboard", text: "Dashboard", icon: <FaSatellite className="w-4 h-4" /> },
     { href: "/blog", text: "Blog", icon: <FaBlog className="w-5 h-5" /> },
-    { href: "https://uptime.pinkcloud.studios", text: "Uptime", icon: <FaSatelliteDish className="w-5 h-5" /> },
+    { href: "https://uptime.pinkcloud.studio", text: "Uptime", icon: <FaSatelliteDish className="w-5 h-5" /> },
     { href: "/services", text: "Services", icon: <FaGlobeAmericas className="w-5 h-5" /> },
     { href: "/crew", text: "Crew", icon: <FaUserAstronaut className="w-5 h-5" /> },
   ];

@@ -27,8 +27,8 @@ const Footer = () => (
         <div className="links flex flex-col">
           <h6><b>Services</b></h6>
           <HashLink href="/services">All Services</HashLink>
-          <HashLink href="https://uptime.pinkcloud.studios">Service Status</HashLink>
-          <HashLink href="https://billing.pinkcloud.studios">Billing</HashLink>
+          <HashLink href="https://uptime.pinkcloud.studio">Service Status</HashLink>
+          <HashLink href="https://billing.pinkcloud.studio">Billing</HashLink>
         </div>
       </nav>
     </div>
