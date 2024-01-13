@@ -47,6 +47,9 @@ const metadata: Metadata = {
     images: images
   }
 }
+
+export { metadata }
+/*
 type Props = {
   params: { id: string }
   searchParams: { [key: string]: string | string[] | undefined }
@@ -59,4 +62,5 @@ export async function generateMetadata(
     ...metadata, // Write dynamic overrides here
   }
 }
+*/
 //#endregion
