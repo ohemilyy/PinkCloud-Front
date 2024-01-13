@@ -11,19 +11,19 @@ const FAQ = () => (
     <div className="w-full max-w-3xl flex flex-col items-center justify-center gap-2">
       {/* TODO: Fix Indents */}
       <Question
-        question="What services does PinkCloud Studios offer?"
+        question="What services do we offer?"
         answer="PinkCloud Studios specializes in a wide range of development services, including web development, software application development, and various other types of development tailored to meet our clients' specific needs."
       />
       <Question
-        question="What sets PinkCloud Studios apart from other freelance development teams?"
+        question="What sets us apart from other freelance development teams?"
         answer="PinkCloud Studios distinguishes itself through a combination of technical excellence, creative solutions, and a client-centric approach. We prioritize understanding our clients' goals to deliver tailored and effective development solutions."
       />
       <Question
-        question="How does PinkCloud Studios ensure the security of the developed applications?"
+        question="How do we ensure the security of the developed applications?"
         answer="Security is a top priority at PinkCloud Studio. We follow industry best practices and employ robust security measures to protect the confidentiality, integrity, and availability of our clients' applications. Regular security audits and updates are part of our development process."
       />
       <Question
-        question="How does PinkCloud Studios handle post-launch support and maintenance?"
+        question="How do we handle post-launch support and maintenance?"
         answer="Our commitment to clients extends beyond project completion. PinkCloud Studios provides post-launch support and maintenance services to address any issues, implement updates, and ensure the continued success of the developed applications."
       />
     </div>
