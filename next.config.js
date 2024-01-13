@@ -3,6 +3,7 @@ const nextConfig = {
   output: 'standalone',
   env: {
     discordInvite: 'https://discord.gg/q35KzNz4z9',
+    url: 'https://pinkcloud.studio'
   },
 }
 
