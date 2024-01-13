@@ -41,10 +41,10 @@ const Question = (props: { question: string; answer: string }) => (
       onChange={(inView, event) => event.target?.parentElement?.children[1]?.classList.toggle('in-view', inView)}
     ></InView>
 
-    <div className="collapse collapse-arrow bg-base-300 bg-opacity-65 rounded-lg in-view">
+    <div className="collapse collapse-arrow bg-base-300 bg-opacity-65 rounded-lg in-view text-left">
       <input type="checkbox" />
-      <h6 className="flex items-center collapse-title">{props.question}</h6>
-      <div className="collapse-content flex items-start">
+      <h6 className="collapse-title flex"><span className="my-auto">{props.question}</span></h6>
+      <div className="collapse-content">
         <small>{props.answer}</small>
       </div>
     </div>
