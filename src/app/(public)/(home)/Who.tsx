@@ -57,11 +57,11 @@ const Who = () => (
 );
 
 const Card = (props: { img: string; name: string; discord: string; github: string; email: string; children: any; }) => (
-  <div className="relative bg-base-200 border-2 border-base-300 py-6 px-8">
+  <div className="relative max-w-[435px]">
     <InView as="div" className="absolute top-0 left-0 h-full w-full" threshold={.67} initialInView={false} fallbackInView={true}
       onChange={(inView, event) => event.target?.parentElement?.children[1]?.classList.toggle('in-view', inView)}></InView>
-    
-    <div className="flex flex-col max-w-[367px] gap-2 items-start justify-center target in-view">
+
+    <div className="w-full h-full flex flex-col gap-2 items-start justify-center bg-base-200 border-2 border-base-300 py-6 px-8 target in-view">
       <div className="w-full flex items-start justify-start text-start gap-4">
         <div className="avatar">
           <div className="w-28 rounded">
@@ -75,9 +75,9 @@ const Card = (props: { img: string; name: string; discord: string; github: strin
 
         <div className="w-full h-full flex flex-col justify-start items-start overflow-hidden">
           <h3 className="whitespace-nowrap">{props.name}</h3>
-          <small className="flex items-center justify-center gap-1.5"><FaDiscord className="mt-1 h-4 w-4"/>{props.discord}</small>
-          <Link href={`https://github.com/` + props.github}><small className="flex items-center justify-center gap-1.5"><FaGithub className="mt-1 h-4 w-4"/>{props.github}</small></Link>
-          <Link href={`mailto:` + props.email}><small className="flex items-center justify-center gap-1.5"><IoIosMail className="mt-1 h-4 w-4"/>{props.email}</small></Link>
+          <small className="inline-flex items-end gap-1.5"><FaDiscord className="h-4 w-4"/> {props.discord}</small>
+          <Link className="mt-1" href={`https://github.com/` + props.github}><small className="inline-flex items-end gap-1.5"><FaGithub className="h-4 w-4"/> {props.github}</small></Link>
+          <Link href={`mailto:` + props.email}><small className="inline-flex items-end gap-1.5"><IoIosMail className="h-4 w-4"/> {props.email}</small></Link>
         </div>
       </div>
       <small className="relative mt-6 positioned-divisor">{props.children}</small>

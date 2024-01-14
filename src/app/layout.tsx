@@ -25,7 +25,7 @@ const description = 'PinkCloud elevates your online presence with our profession
 const images: string[] = [
   url.toString() + 'img/website_preview.png'
 ];
-const metadata: Metadata = {
+export const metadata: Metadata = {
   metadataBase: url,
   title: title,
   description: description,
@@ -47,20 +47,16 @@ const metadata: Metadata = {
     images: images
   }
 }
-
-export { metadata }
-/*
-type Props = {
-  params: { id: string }
-  searchParams: { [key: string]: string | string[] | undefined }
-}
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata,
-): Promise<Metadata> {
-  return {
-    ...metadata, // Write dynamic overrides here
-  }
-}
-*/
+// type Props = {
+//   params: { id: string }
+//   searchParams: { [key: string]: string | string[] | undefined }
+// }
+// export async function generateMetadata(
+//   { params, searchParams }: Props,
+//   parent: ResolvingMetadata,
+// ): Promise<Metadata> {
+//   return {
+//     ...metadata, // Write dynamic overrides here
+//   }
+// }
 //#endregion

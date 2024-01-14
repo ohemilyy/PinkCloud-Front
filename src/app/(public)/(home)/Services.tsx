@@ -43,12 +43,12 @@ const Services = () => (
 );
 
 const Card = (props: { icon: JSX.Element; title: string; children: any; href: Url }) => (
-  <div className="card relative p-8 bg-base-200 border-2 border-base-300 rounded-2xl transition-transform transform hover:scale-105 hover:shadow-md">
+  <div className="relative card">
     <InView className="absolute top-0 left-0 h-full w-full" as="div" threshold={.67} initialInView={false} fallbackInView={true}
       onChange={(inView, event) => event.target?.parentElement?.children[1].classList.toggle('in-view', inView)}
     ></InView>
     
-    <div className="target w-full h-full flex flex-col items-start justify-start gap-7 in-view">
+    <div className="w-full h-full flex flex-col items-start justify-start gap-7 p-8 bg-base-200 border-2 border-base-300 rounded-2xl transition-transform transform hover:scale-105 hover:shadow-md target in-view">
       <h4 className="gap-3 flex flex-row justify-center items-center text-neutral">{props.icon} {props.title}</h4>
       <small>{props.children}</small>
     </div>

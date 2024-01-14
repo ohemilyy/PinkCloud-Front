@@ -3,6 +3,7 @@ import Header from './(layout-components)/Header';
 import Sidebar from './(layout-components)/Sidebar';
 import SidebarContent from './(layout-components)/SidebarContent';
 import Footer from './(layout-components)/Footer';
+import TawkTo from '@/components/TawkTo';
 
 export default function PublicLayout({
   children,
@@ -17,6 +18,7 @@ export default function PublicLayout({
     >
       <Header />
       {children}
+      <TawkTo />
       <Footer />
     </Sidebar>
   );

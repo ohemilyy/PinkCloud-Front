@@ -27,9 +27,9 @@ section {
 .navlink.active::after {
   content: '';
   position: absolute;
-  bottom: 3px;
+  bottom: -1px;
   left: 0%;
-  transform: translateX(240%);
+  transform: translateX(175%);
   width: 15px;
   height: 2px;
   background-color: var(--fallback-bc,oklch(var(--bc)/1));
@@ -57,7 +57,7 @@ section {
 .drawer-side .navlink.active::after {
   bottom: -2px;
   left: 0px;
-  transform: translateX(210%);
+  transform: translateX(200%);
 }
 .sidebar-filter {
   opacity: 60%;
