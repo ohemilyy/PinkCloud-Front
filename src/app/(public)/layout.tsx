@@ -18,8 +18,8 @@ export default function PublicLayout({
     >
       <Header />
       {children}
-      <TawkTo />
       <Footer />
+      <TawkTo />
     </Sidebar>
   );
 }

@@ -33,8 +33,8 @@ import React from "react";
 const TawkTo = () => {
   return (
     <TawkMessengerReact
-      propertyId={process.env.NEXT_PUBLIC_TWAKTO_PROPERTY_ID}
-      widgetId={process.env.NEXT_PUBLIC_TWAKTO_WIDGET_ID}
+      propertyId={process.env.TAWKTO_PROPERTY_ID}
+      widgetId={process.env.TAWKTO_WIDGET_ID}
     />
   );
 };

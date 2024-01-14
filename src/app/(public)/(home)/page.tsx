@@ -9,8 +9,8 @@ import FAQ from './FAQ';
 export default function Home() {
   return <>
     <Hero />
-    <Who />
     <Services />
+    <Who />
     {/* <Portfolio /> */}
     <Ready />
     <FAQ />

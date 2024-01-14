@@ -19,7 +19,7 @@ export default function RootLayout({
 }
 
 //#region Metadata
-const url = new URL(process.env.url || '');
+const url = new URL(process.env.URL || '');
 const title = 'PinkCloud - Voyager';
 const description = 'PinkCloud elevates your online presence with our professional website freelancers';
 const images: string[] = [
