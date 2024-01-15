@@ -46,7 +46,7 @@ function useShowOnScroll(elemRect?: DOMRect) : boolean {
     // Cleanup function to unsubscribe when the component unmounts
     const subscription = subscribe(onScrolled);
     return () => subscription?.unsubscribe();
-  }, [subscribe, success]);
+  }, [subscribe, success, onScrolled]);
 
   // Return the current state to indicate whether to show the element on scroll
   return isShow;

@@ -2,7 +2,8 @@ const Sidebar = (props: { barClass?: string; barContent: any; className?: string
   <input id="sidebar" type="checkbox" className="drawer-toggle" />
   <nav className="drawer-side md:hidden z-[3]">
     <label htmlFor="sidebar" className="drawer-overlay"></label>
-    <div className={props.barClass}>
+    <div className={`relative ${props.barClass}`}>
+      <div className="absolute h-full w-full bg-base-100 inset-0 z-[-1] sidebar-filter"></div>
       {props.barContent}
     </div>
   </nav>
@@ -11,4 +12,5 @@ const Sidebar = (props: { barClass?: string; barContent: any; className?: string
     {props.children}
   </main>
 </>;
+
 export default Sidebar;
