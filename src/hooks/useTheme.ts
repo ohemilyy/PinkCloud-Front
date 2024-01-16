@@ -1,11 +1,11 @@
 'use client';
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
-function useTheme(defaultTheme: string) : [string | undefined, Dispatch<SetStateAction<string | undefined>>] {
+function useTheme(defaultTheme: string = "dark") : [string | undefined, Dispatch<SetStateAction<string | undefined>>] {
   const [theme, setTheme] = useState<string>();
   useEffect(() => {
     const local = window.localStorage.getItem("theme");
-    setTheme(local ?? 'dark');
+    setTheme(local ?? defaultTheme);
   }, []);
 
   useEffect(() => {
