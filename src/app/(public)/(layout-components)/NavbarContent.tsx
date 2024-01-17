@@ -2,7 +2,7 @@ import NavLinks from './NavLinks';
 import Logo from '@/components/Logo';
 import ThemeToggle from '@/components/ThemeToggle';
 
-const SidebarContent = () => <>
+const NavbarContent = () => <>
   <Logo href={'/'} />
 
   <div className="flex flex-col w-full h-full mt-24 gap-7">
@@ -11,4 +11,4 @@ const SidebarContent = () => <>
   </div>  
 </>;
 
-export default SidebarContent;
+export default NavbarContent;
