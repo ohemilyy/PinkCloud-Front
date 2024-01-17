@@ -1,0 +1,111 @@
+.bg-img {
+  background-image: url('/img/login-bg.jpg');
+}
+
+.hide-scroll {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+}
+
+.nav-filter {
+  opacity: 90%;
+}
+[data-theme="light"] .nav-filter {
+  opacity: 45%;
+}
+
+.content-filter {
+  opacity: 90%;
+}
+[data-theme="light"] .content-filter {
+  opacity: 65%;
+}
+
+/*#region Topbar*/
+.form-control {
+  @apply hide-scroll;
+
+  transition: flex 0.5s ease-in-out;
+  flex-basis: 0;
+
+  min-width: 0;
+}
+#searchToggle:checked ~ div.form-control {
+  flex-basis: 280px;
+}
+/*#endregion*/
+
+/*#region Sidebar*/
+.sidebar-collapsable {
+  padding: var(--navbar-padding, 0.5rem);
+
+  width: 17rem;
+  overflow-x: auto;
+  flex-direction: column;
+  transition: width 0.5s ease-in-out;
+}
+.drawer-toggle:not(:checked) ~ .sidebar-collapsable {
+  width: 65px;
+  padding: 0;
+}
+
+.expand-btn {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.expand-btn svg {
+  transform: rotate(180deg);
+}
+.drawer-toggle:not(:checked) ~ .sidebar-collapsable .expand-btn svg {
+  @apply text-2xl;
+  transform: rotate(360deg);
+}
+
+.drawer-toggle:not(:checked) ~ .sidebar-collapsable .hide {
+  opacity: 0;
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.navbar-links li a {
+  padding: 12px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-links li a svg {
+  height: 32px;
+  width: 32px;
+}
+.navbar-links li a:hover svg {
+  color: oklch(var(--n));
+}
+.navbar-links li a > span {
+  @apply min-w-[123px] text-base lg:min-w-[138px] lg:text-lg xl:min-w-[153px] xl:text-xl;
+  margin-left: 15px;
+}
+.navbar-links li a:hover, .navbar-links .active {
+  color: oklch(var(--n));
+  transition: all 100ms ease-in;
+  border-radius: 10px;
+}
+.navbar-links li a:hover, .navbar-links .active {
+  @apply backdrop-filter backdrop-brightness-[.67];
+}
+[data-theme="light"] .navbar-links li a:hover, .navbar-links .active {
+  @apply backdrop-filter backdrop-brightness-[.9];
+}
+.navbar-links .active {
+  color: oklch(var(--n));
+  margin-right: calc(-1 * var(--navbar-padding, 0.5rem));
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.navbar-links .active svg {
+  color: oklch(var(--n));
+}
+/*#endregion*/

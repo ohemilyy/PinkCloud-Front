@@ -1,7 +1,7 @@
 import { FaBars } from 'react-icons/fa6';
 import './styles.css'
 
-const MobileNavbar = (props: { className?: string; content: any; children: any; includeInput?: boolean; }) => {
+const MobileNavbar = (props: { className?: string; content: any; includeInput?: boolean; }) => {
   const includeInput = props.includeInput ?? true;
   return <>
     {includeInput ? <input id="navbar" type="checkbox" className="drawer-toggle"/> : <></>}
@@ -12,14 +12,12 @@ const MobileNavbar = (props: { className?: string; content: any; children: any; 
         {props.content}
       </div>
     </nav>
-    
-    {props.children}
   </>
 }
 
 export default MobileNavbar;
 
 export const MobileNavToggle = () =>
-  <label htmlFor="navbar" tabIndex={0} className="flex md:hidden expand-btn btn btn-ghost btn-circle mr-4">
+  <label htmlFor="navbar" tabIndex={0} className="inline-flex md:hidden expand-btn btn btn-ghost btn-circle">
     <FaBars />
   </label>;

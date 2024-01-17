@@ -2,7 +2,7 @@ import NavLinks from './NavLinks';
 import Logo from '@/components/Logo';
 import ThemeToggle from '@/components/ThemeToggle';
 
-const NavbarContent = () => <>
+const MobileNavbarContent = () => <>
   <Logo href={'/'} />
 
   <div className="flex flex-col w-full h-full mt-24 gap-7">
@@ -11,4 +11,4 @@ const NavbarContent = () => <>
   </div>  
 </>;
 
-export default NavbarContent;
+export default MobileNavbarContent;

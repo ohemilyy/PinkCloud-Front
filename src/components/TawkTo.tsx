@@ -1,7 +1,6 @@
 'use client';
 // @ts-ignore
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
-import React from "react";
 
 // propertyId: string.isRequired,
 // widgetId: string.isRequired,

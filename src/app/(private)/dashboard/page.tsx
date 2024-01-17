@@ -1,7 +1,6 @@
 import './styles.css';
 
-export default function Dashboard() {
+export default function DashboardPage() {
   return <>
-    Nothing to see here yet.
   </>;
 }

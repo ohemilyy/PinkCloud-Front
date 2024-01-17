@@ -17,7 +17,7 @@ const Header = () => {
         <div className="flex flex-row items-center">
           <MobileNavToggle />
 
-          <Logo className="mx-auto md:ml-0" href={'/'} />
+          <Logo className="ml-4 md:ml-0" href={'/'} />
         </div>
 
         <NavLinks />
