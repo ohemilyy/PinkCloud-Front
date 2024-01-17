@@ -1,0 +1,45 @@
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-image: url('/img/login-bg.jpg');
+}
+
+/* #region Console */
+.console-filter {
+  opacity: 40%;
+}
+.mockup-window {
+  --text-color: #e2e8f0;
+  color: var(--text-color);
+}
+.mockup-window::before {
+  display: none;
+}
+
+/* Window buttons */
+.mockup-window .mockup-bar > div {
+  content: "";
+  display: block;
+  aspect-ratio: 1 / 1;
+  height: 1.25rem;
+  border-radius: 9999px;
+  opacity: 0.6;
+  box-shadow: 2em 0 red, 4.3em 0 yellow, 6.6em 0 lime;
+}
+
+/* Supabase */
+.mockup-window .mockup-content > div > div > div {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.mockup-window .mockup-content > div > div > div > button {
+  width: auto;
+  flex: 1 0 auto;
+}
+.mockup-window .mockup-content .supabase-auth-ui_ui-message {
+  color: var(--text-color);
+  background-color: #00ca73;
+}
+/* #endregion */
