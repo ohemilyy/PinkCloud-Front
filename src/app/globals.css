@@ -91,3 +91,10 @@ a {
 .logo-overrides .cloud-filter {
   filter: saturate(200%) hue-rotate(19deg) brightness(93%);
 }
+
+.bg-full {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+}

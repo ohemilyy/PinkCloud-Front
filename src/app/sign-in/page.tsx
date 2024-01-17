@@ -13,7 +13,7 @@ export default function SignIn() {
   console.log(callbackRoute);
 
   return <>
-    <div className="flex w-full min-h-screen items-center justify-center bg-img">
+    <div className="flex w-full min-h-screen items-center justify-center bg-full bg-img">
       <Console className="pb-10 pt-4 px-6 sm:px-16">
         <Logo className="mx-auto mt-2 mb-4" href={'/'} />
         <h4 className="mb-3">

@@ -1,8 +1,4 @@
 .bg-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center;
   background-image: url('/img/login-bg.jpg');
 }
 
@@ -11,7 +7,7 @@
   opacity: 40%;
 }
 .mockup-window {
-  --text-color: #e2e8f0;
+  --text-color: #ffffff;
   color: var(--text-color);
 }
 .mockup-window::before {
