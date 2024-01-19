@@ -2,7 +2,7 @@ const Sidebar = (props: { content: any; className: string; includeInput?: boolea
   const includeInput = props.includeInput ?? true;
   return <>
     {includeInput ? <input id="sidebar" type="checkbox" className="drawer-toggle"/> : <></>}
-    <nav className={`flex-none sidebar-collapsable hide-scroll h-full ${props.className || ''}`}>
+    <nav className={`flex-none sidebar-collapsable h-full ${props.className || ''}`}>
       {props.content}
     </nav>
   </>;

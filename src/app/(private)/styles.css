@@ -2,12 +2,6 @@
   background-image: url('/img/login-bg.jpg');
 }
 
-.hide-scroll {
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  scrollbar-width: none;
-}
-
 .nav-filter {
   opacity: 90%;
 }
@@ -22,22 +16,12 @@
   opacity: 65%;
 }
 
-/*#region Topbar*/
-.form-control {
-  @apply hide-scroll;
-
-  transition: flex 0.5s ease-in-out;
-  flex-basis: 0;
-
-  min-width: 0;
-}
-#searchToggle:checked ~ div.form-control {
-  flex-basis: 280px;
-}
-/*#endregion*/
-
 /*#region Sidebar*/
 .sidebar-collapsable {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+
   padding: var(--navbar-padding, 0.5rem);
 
   width: 17rem;

@@ -1,11 +1,11 @@
 'use client';
 
 import React, { useEffect, useState } from "react";
-import { BsSearchHeart } from "react-icons/bs";
 import Image from "next/image"
 import Dropdown from "./Dropdown";
 import Link from "next/link";
 import { MobileNavToggle } from "@/components/MobileNavbar/component";
+import ShrinkableSearch from "@/components/ShrinkableSearch/component";
 import { SidebarToggle } from "./Sidebar";
 import Logo from "@/components/Logo";
 
@@ -29,14 +29,9 @@ const Topbar = () => {
         <Logo href={'/dashboard'} className="hidden sm:flex ml-4"/>
       </div>
 
-      <input id="searchToggle" type="checkbox" className="drawer-toggle border-0" />
-      <div tabIndex={0} className="form-control border-0">
-        <input type="text" placeholder="Search" className="input rounded-3xl w-full border-2 border-white border-opacity-25 focus:border-opacity-80" />
-      </div>
-      <div className="flex-none">
-        {/* Search */}
-        <label htmlFor="searchToggle" tabIndex={0} className="ml-2 btn btn-ghost btn-circle"><BsSearchHeart className="text-xl" /></label>
-
+      <div>
+        <ShrinkableSearch />
+        
         <Dropdown
           indicatorIcon={
             <div className="w-10 rounded-full flex justify-center items-center overflow-hidden">
