@@ -36,7 +36,7 @@ const Who = () => (
       <Card img="/img/emilyg.png"
             name="CEO - Emily G."
             discord="ohemilyy"
-            github="egirldevs"
+            github="ohemilyy"
             email="emily@pinkcloud.studio">
         Hey there, I'm Emily! A 22-year-old transfeminine individual with a deep passion for Astrophysics and Computer Science (C.S.).<br />
         Over the past seven years, I've immersed myself in the world of C.S., gaining a comprehensive understanding of Cybersecurity and Cyber Threat Intelligence. My journey includes both formal education and practical experience, and I'm currently majoring in Astrophysics and C.S.<br />
