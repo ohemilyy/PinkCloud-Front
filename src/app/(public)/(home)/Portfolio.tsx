@@ -1,5 +1,4 @@
 'use client'; 
-import React from "react";
 import Image from "next/image";
 import HashLink from "@/components/HashLink";
 import { InView } from "react-intersection-observer";

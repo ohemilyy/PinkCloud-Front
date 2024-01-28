@@ -1,7 +1,6 @@
 'use client';
 // @ts-ignore
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
-import React from "react";
 
 // propertyId: string.isRequired,
 // widgetId: string.isRequired,
@@ -33,8 +32,8 @@ import React from "react";
 const TawkTo = () => {
   return (
     <TawkMessengerReact
-      propertyId={process.env.TAWKTO_PROPERTY_ID}
-      widgetId={process.env.TAWKTO_WIDGET_ID}
+      propertyId={process.env.NEXT_PUBLIC_TAWKTO_PROPERTY_ID}
+      widgetId={process.env.NEXT_PUBLIC_TAWKTO_WIDGET_ID}
     />
   );
 };

@@ -1,12 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
-  env: {
-    URL: 'https://pinkcloud.studio',
-    DISCORD_INVITE: 'https://discord.gg/q35KzNz4z9',
-    TAWKTO_PROPERTY_ID: '65a3001f0ff6374032bffdfa',
-    TAWKTO_WIDGET_ID: '1hk2bgvd5',
-  },
+  output: 'standalone'
 }
 
 module.exports = nextConfig
