@@ -62,7 +62,7 @@ const Card = (props: { img: string; name: string; discord: string; github: strin
     <InView as="div" className="absolute top-0 left-0 h-full w-full" threshold={.67} initialInView={false} fallbackInView={true}
       onChange={(inView, event) => event.target?.parentElement?.children[1]?.classList.toggle('in-view', inView)}></InView>
 
-    <div className="w-full h-full flex flex-col gap-2 items-start justify-center bg-base-200 border-2 border-base-300 py-6 px-8 target in-view">
+    <div className="w-full h-full flex flex-col gap-2 items-start justify-start bg-base-200 border-2 border-base-300 p-8 target in-view">
       <div className="w-full flex items-start justify-start text-start gap-4">
         <div className="avatar">
           <div className="w-28 rounded">
