@@ -21,16 +21,6 @@ const Who = () => (
     </div>
 
     <div className="flex flex-row flex-wrap justify-center gap-7">
-      <Card img="/img/emily.png"
-            name="CEO - Emily G."
-            discord="ohemilyy"
-            github="egirldevs"
-            email="emily@pinkcloud.studio">
-        Hey there, I'm Emily! A 22-year-old transfeminine individual with a deep passion for Astrophysics and Computer Science (C.S.).<br />
-        Over the past seven years, I've immersed myself in the world of C.S., gaining a comprehensive understanding of Cybersecurity and Cyber Threat Intelligence. My journey includes both formal education and practical experience, and I'm currently majoring in Astrophysics and C.S.<br />
-        As a neurodivergent individual, I bring a unique perspective to the tech realm, advocating for diversity and inclusivity. Eager to stay at the forefront of technology, I'm working towards Red Hat Enterprise Linux certification, aiming to make meaningful contributions to the dynamic field of C.S.
-      </Card>
-
       <Card img="/img/elaina.png"
             name="COO - Elaina L."
             discord="nekolynn"
@@ -42,15 +32,26 @@ const Who = () => (
         I have been programming since I was 11, but recently (last 5~6 years) I have been more actively doing so. <br />
         Focused on collaborating with my team and clients to deliver top-notch software written in clean and efficient code. Passionate about building successful products and stunning websites.
       </Card>
+
+      <Card img="/img/emilyg.png"
+            name="CEO - Emily G."
+            discord="ohemilyy"
+            github="egirldevs"
+            email="emily@pinkcloud.studio">
+        Hey there, I'm Emily! A 22-year-old transfeminine individual with a deep passion for Astrophysics and Computer Science (C.S.).<br />
+        Over the past seven years, I've immersed myself in the world of C.S., gaining a comprehensive understanding of Cybersecurity and Cyber Threat Intelligence. My journey includes both formal education and practical experience, and I'm currently majoring in Astrophysics and C.S.<br />
+        As a neurodivergent individual, I bring a unique perspective to the tech realm, advocating for diversity and inclusivity. Eager to stay at the forefront of technology, I'm working towards Red Hat Enterprise Linux certification, aiming to make meaningful contributions to the dynamic field of C.S.
+      </Card>
       
-      <Card img="/img/nathan.png"
-            name="CHRO - Nathan W."
-            discord="nopox"
-            github="Nopock"
-            email="nathan@pinkcloud.studio">
-        Hey folks! I am Nathan, a 16-year-old Software Engineer and Infrastructure Manager hailing from California. My passion lies in the continuous pursuit of knowledge, particularly in exploring new frameworks and discovering innovative software solutions.<br />
-        Over the past two years, I have honed my programming skills in Java and Kotlin, with a primary emphasis on backend development.<br />
-        Specializing in frameworks such as Ktor and Spring Boot, I am dedicated to assisting clients in constructing robust backends and optimizing infrastructure. My commitment to excellence and enthusiasm for staying at the forefront of technological advancements drive me to contribute effectively to any project I undertake.
+      <Card img="/img/emilyb.png"
+            name="CTO - Emily B."
+            discord="logemi"
+            github="atomoxetine"
+            email="emilyb@pinkcloud.studio">
+        Hi! My name is Emily and I'm a 19-year-old transgender girl from Brazil.<br />
+        I enjoy problem solving and I used to participate in Competitive Programming competitions a few years back, in which I was awarded a few prizes.<br />
+        Because of that, I naturally am very proficient at arriving at good solutions for intricate problems. <br />
+        Currently, I am focused on expanding my tech stack and acquiring experience in many different fields.
       </Card>
     </div>
   </section>

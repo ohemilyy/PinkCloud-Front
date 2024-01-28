@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: 'PinkCloud Studios',
     type: "website",
-    emails: ['emily@pinkcloud.studio', 'elaina@pinkcloud.studio', 'nathan@pinkcloud.studio'],
+    emails: ['emily@pinkcloud.studio', 'elaina@pinkcloud.studio', 'emilyb@pinkcloud.studio'],
     locale: 'en_GB',
     url: url,
     title: title,
