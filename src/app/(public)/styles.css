@@ -16,7 +16,18 @@ section {
   text-fill-color: transparent;
   text-shadow: none;
 }
-
+/*pink gradient*/
+.text-pink-gradient {
+  background: linear-gradient(
+    90deg,
+    #f953c6 0%,
+    #ad0c65 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  text-shadow: none;
+}
 /*#region Navlinks*/
 .navlink {
   display: flex;
