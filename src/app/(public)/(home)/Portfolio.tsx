@@ -5,9 +5,7 @@ import { InView } from "react-intersection-observer";
 
 const Portfolio = () => {
   const categories = [
-    { title: "Infrastructure Management", images: ["/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png"] },
-    { title: "Software Development", images: ["/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png"] },
-    { title: "Website Development", images: ["/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png", "/img/placeholder.png"] },
+    { title: "MCCade Games", images: ["/img/mccade-banner.png"] },
   ];
 
   const items = categories.map((category, index) => (
@@ -15,12 +13,12 @@ const Portfolio = () => {
   ));
 
   return (
-    <section id="portfolio" className="flex flex-col items-center justify-center gap-7 text-center">
-      <h2 className="font-bold mt-3">
-        Previous <span className="text-rainbow">Works</span> and <span className="text-rainbow">References</span>
+    <section id="portfolio" className="hidden sm:flex flex-col items-center justify-center gap-7 text-center">
+      <h2 className="font-bold mb-5">
+        <span className="text-rainbow">Projects</span> and <span className="text-rainbow">References</span>
       </h2>
 
-      <div className="hidden sm:flex relative items-center justify-center sm:w-full max-w-[900px] h-fit mx-auto overflow-hidden rounded-2xl">
+      <div className="flex relative items-center justify-center sm:w-full h-fit mx-auto rounded-2xl inner-carousel">
         <InView as="div" className="absolute top-0 left-0 h-full w-full" threshold={.67} initialInView={true} fallbackInView={true}
           onChange={(inView, event) => event.target?.parentElement?.children[1]?.classList.toggle('in-view', inView)}></InView>
 
@@ -39,7 +37,7 @@ const Category = (props: { title: string; images: string[] }) => {
 
   return (
     <>
-      <h3 className="text-neutral mb-8"><b>{title}</b></h3>
+      <h3 className="text-neutral mb-4"><b>{title}</b></h3>
 
       <Carousel
         uId={title.toLowerCase().split(' ').join('-')}
@@ -59,8 +57,8 @@ const Category = (props: { title: string; images: string[] }) => {
 const Carousel = (props: { uId?: string; items: JSX.Element[]; isArrows: boolean }) => {
   const uId = props.uId ?? "carousel";
   return (
-    <div className="w-full h-full">
-      <div className="relative flex items-center justify-center sm:w-full md:w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-[60%] max-w-[900px] h-full mx-auto overflow-hidden">
+    <div className="w-full">
+      <div className="flex flex-col items-center justify-center sm:w-full md:w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-[60%] max-w-[900px] mx-auto">
         <div className="carousel w-full h-fit flex items-center">
           {props.items.map((item, index) =>
             <CarouselItem key={index} carouselId={uId} index={index} n={props.items.length} isArrows={props.isArrows} content={item} />
@@ -69,10 +67,12 @@ const Carousel = (props: { uId?: string; items: JSX.Element[]; isArrows: boolean
 
         {
           !props.isArrows ?
-            <div className="absolute flex justify-center gap-2 bottom-0">
+            <div className="flex justify-center gap-2">
               {props.items.map((_, index) => {
                 const id = `${uId}${index}`;
-                return <HashLink key={index} href={`/#${id}`} className="btn h-8 px-4 min-h-8 px-4">{index + 1}</HashLink>
+                return <HashLink key={index} href={`/#${id}`} className="btn h-8 min-h-8 py-5 flex content-center z-[1] my-[3px]">
+                  <span>{index + 1}</span>
+                </HashLink>
               })}
             </div> : <></>
         }
@@ -85,11 +85,11 @@ const CarouselItem = (props: { carouselId: string; index: number; n: number; isA
   const { carouselId, index, n, isArrows, content } = props;
   const id = `${carouselId}${index}`;
   return (
-    <div id={id} className="carousel-item relative flex flex-col w-full mb-12">
+    <div id={id} className="carousel-item relative flex flex-col w-full">
       {content}
       {
         isArrows ? 
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div className="flex justify-between left-5 right-5 w-full mt-[-48px] max-w-[1050px] mx-auto">
             <HashLink href={`/#${carouselId}${(n + index - 1) % n}`} className="btn btn-circle">❮</HashLink> 
             <HashLink href={`/#${carouselId}${(n + index + 1) % n}`} className="btn btn-circle">❯</HashLink>
           </div> : <></>

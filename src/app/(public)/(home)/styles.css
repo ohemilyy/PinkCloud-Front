@@ -164,6 +164,15 @@
 }
 /*#endregion*/
 
+/*#region Portfolio*/
+#portfolio .inner-carousel {
+  max-width: 1536px;
+}
+#portfolio #main0 {
+  margin-bottom: 0;
+}
+/*#endregion*/
+
 /*#region Ready*/
 #ready .cloud {
   background: linear-gradient(
