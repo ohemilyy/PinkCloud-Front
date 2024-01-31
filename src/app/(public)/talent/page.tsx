@@ -17,7 +17,7 @@ export default function Careers() {
             Want to be a part of PinkCloud Studios? View our current openings
           </p>
           <div className="flex flex-col md:gap-y-4 mt-5">
-            <div className="outer-container">
+            <div className="outer-container bg-base-200">
               <h3 className="Heading mt-12 mb-6">Our <span className="text-pink-gradient">Team</span></h3>
               <p className="Paragraph1">
                 The PinkCloud Studio team has been pooling our expertise together for over a year, continuously striving to enhance every aspect of our operations. Our zeal lies in crafting solutions and bringing digital ideas to life. We believe that anyone with a strong motivation to be part of a cutting-edge web development company and a readiness to devote their skills to serving our clientele will find a welcoming environment in our team. All work is conducted remotely, with remuneration varying according to the role. As a member of our diligent crew of system administrators and web developers, you will get a chance to leave your distinct mark on our projects.

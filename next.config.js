@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone'
+  output: 'standalone',
+  env: {
+    url: 'https://pinkcloud.studio'
+  },
 }
 
 module.exports = nextConfig

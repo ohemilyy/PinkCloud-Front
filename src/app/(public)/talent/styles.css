@@ -1,4 +1,4 @@
-.container
+.outer-container
 {
     display: flex;
     flex-direction: column;
@@ -6,13 +6,11 @@
     align-items: flex-start;
     padding: 1.5rem 4rem 2.5rem;
     border-radius: 20px;
-    background-color: hsla(0,0%,5%,.3);
 }
 .Subtitle
 {
     font-weight: 400;
     font-size: 1.5rem;
-    color: hsla(0,0%,100%,.65);
 }
 .Heading
 {
@@ -20,21 +18,18 @@
     width: fit-content;
     font-weight: 700;
     font-size: 2rem;
-    color: #fff;
 }
 .Paragraph1
 {
     text-indent: 0px;
     font-weight: 400;
     font-size: 1.1rem;
-    color: hsla(0,0%,100%,.8);
 }
 .List
 {
     margin-left: 1rem;
     font-weight: 400;
     font-size: 1rem;
-    color: hsla(0,0%,100%,.8);
 }
 .BulletPoint
 {
@@ -48,7 +43,6 @@
     align-items: flex-start;
     padding: 2rem 2.5rem 1.5rem;
     border-radius: 0 0 15px 15px;
-    background-color: #41362f;
     overflow: hidden;
     transition: all .2s cubic-bezier(.39,.58,.57,1);
 }
@@ -57,5 +51,4 @@
     margin: 0 0 .75rem !important;
     font-size: 1rem;
     font-weight: 700;
-    color: #fff;
 }
