@@ -10,7 +10,6 @@ import Console from './Console';
 export default function SignIn() {
   const supabase = createClientComponentClient<Database>()
   const callbackRoute = process.env.NEXT_PUBLIC_CURR_DOMAIN + "/api/auth/callback";
-  console.log(callbackRoute);
 
   return <>
     <div className="flex w-full min-h-screen items-center justify-center bg-full bg-img">

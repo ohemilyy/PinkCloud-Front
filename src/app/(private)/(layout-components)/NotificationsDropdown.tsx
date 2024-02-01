@@ -15,7 +15,6 @@
 //     if (!user) return;
 
 //     const handleNotifications = async () => {
-//       console.log('Loading notifications for ' + user.user_metadata?.full_name);
     
 //       const { data: retrieved, error } = await supabase
 //         .from('notifications')

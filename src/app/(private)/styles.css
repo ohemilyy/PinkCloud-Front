@@ -3,17 +3,14 @@
 }
 
 .nav-filter {
-  opacity: 90%;
+  opacity: 80%;
 }
 [data-theme="light"] .nav-filter {
   opacity: 45%;
 }
 
 .content-filter {
-  opacity: 90%;
-}
-[data-theme="light"] .content-filter {
-  opacity: 65%;
+  opacity: 50%;
 }
 
 /*#region Sidebar*/
