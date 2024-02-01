@@ -3,6 +3,7 @@ import useScrollSnap, { forceScrollTo } from "@/hooks/useScrollSnap";
 import useKeyScroll from "@/hooks/useKeyScroll";
 import { useRef } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import VideoBg from "@/components/VideoBg/component"
 
 const Hero = () => {
   const hero = useRef<HTMLElement | null>(null);
@@ -12,10 +13,10 @@ const Hero = () => {
   const handleArrowClick = () => forceScrollTo(hero.current?.nextSibling as Element);
   return (
     <section ref={hero} id="hero" className="relative flex flex-col gap-8 items-center">
-      <div className="absolute inset-0 h-full w-full justify-center bg-grad-filter" style={{ zIndex: 0 }}></div>
+      <VideoBg width={1920} height={1080} aspectRatio="16:9"/>
 
       <span className="w-fit flex flex-col items-center justify-center my-auto font-bold scale-75 sm:scale-95 md:scale-110">
-        <h2 className="whitespace-nowrap uppercase text-neutral text-center">
+        <h2 className="whitespace-nowrap uppercase text-neutral text-center text-stroke">
           Expertise.<br />Innovation.<br />Client Focus.<br />Quality of Work.
         </h2>
 

@@ -21,7 +21,7 @@ const Services = () => (
     </div>
     
     
-    <div className="grid auto-rows-fr gap-1 cards w-full max-w-screen-lg mx-auto">
+    <div className="grid auto-rows-fr gap-2 cards w-full max-w-screen-lg mx-auto">
       <Card icon={<FaInfinity />} title="Freelances" href={""}>
       PinkCloud Studios offers a diverse range of freelance services, specializing in web development, software application development, and various other types of development. Our team is dedicated to providing innovative solutions tailored to meet the unique needs of each client.
       </Card>
