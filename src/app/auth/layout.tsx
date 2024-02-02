@@ -1,18 +1,19 @@
-'use client'
 import './styles.css'
 import Logo from '@/components/Logo'
+import { Suspense } from "react";
 import Console from './Console';
 
-export default function SignIn() {
+export default function Layout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return <>
     <div className="flex w-full min-h-screen items-center justify-center bg-full bg-img">
-      <Console className="pb-10 pt-4 px-6 sm:px-16">
+      <Console className="pb-10 p-6 sm:px-16 flex flex-col items-center">
         <Logo className="mx-auto mt-2 mb-4" href={'/'} />
-        <h4 className="mb-3">
-          Log into our dashboard below.
-        </h4>
-    
+        <Suspense>{children}</Suspense>
       </Console>
     </div>
-  </>;
+  </>;  
 }

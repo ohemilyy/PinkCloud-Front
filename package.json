@@ -11,7 +11,9 @@
   "dependencies": {
     "@sentry/nextjs": "^7.92.0",
     "@tawk.to/tawk-messenger-react": "^2.0.2",
+    "crypto": "^1.0.1",
     "daisyui": "^4.4.24",
+    "iron-session": "^8.0.1",
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

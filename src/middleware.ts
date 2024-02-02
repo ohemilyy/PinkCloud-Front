@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from 'next/server';
-import getSession from "./libs/session/getSession";
+import { getSession } from './libs/session/manager';
 
 export const config = {
   matcher: ['/auth/:path*', '/dashboard/:path*', '/su/:path*'],
