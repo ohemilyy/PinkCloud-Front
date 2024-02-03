@@ -5,6 +5,7 @@ import { BehaviorSubject } from 'rxjs';
 import useGlobal from "./useGlobal";
 import { useCallback } from "react";
 import { isResultError } from "@/libs/Utils";
+import HTTPClient from "@/libs/HTTPClient";
 
 interface SessionManager {
   session?: SessionData;
@@ -16,9 +17,8 @@ interface SessionManager {
 function useSession(): SessionManager {
   const runOnceGlobally = useCallback(
     ($: BehaviorSubject<SessionData>) =>
-      fetch("/api/auth")
-        .then((res) => res.json())
-        .then((session) => $.next(session)), []
+    new HTTPClient().GetAsync("/api/auth")
+        .then(res => $.next(res[0])), []
   );
 
   const getDefaultSession = useCallback(() => defaultSession, []);
@@ -38,11 +38,8 @@ function useSession(): SessionManager {
   const login = InterceptSession(Login);
 
   const logout = useCallback(async () => {
-    await fetch("/api/auth", { method: "delete" })
-      .then((res) => res.json())
-      .then((session) => {
-        setSession(session);
-      });
+    await new HTTPClient().DeleteAsync("/api/auth")
+      .then(res => setSession(res[0]));
   }, [setSession]);
 
   return {

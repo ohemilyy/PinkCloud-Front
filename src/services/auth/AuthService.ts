@@ -7,14 +7,22 @@ import { ApiClient, isResultError } from "@/libs/Utils";
 import AgentSession from "@/libs/types/models/AgentSession";
 
 // Variables
-const baseEndpoint = "/auth";
+const baseEndpoint = "/proxy/auth";
 
 const InterceptSession = 
   (method: any): (body: any) => Promise<[SessionData | null, number, string | null]> =>
     async (body: any) => {
       const result = await method(body);
       if (isResultError(result)) return result;
-      return [await setSession(result[0], true), result[1], result[2]];
+      
+      const ironSession = await setSession(result[0], true);
+      const sessionData: SessionData = {
+        agentName: ironSession.agentName,
+        agentEmail: ironSession.agentEmail,
+        sessionId: ironSession.sessionId,
+        isLoggedIn: ironSession.isLoggedIn
+      }
+      return [sessionData, result[1], result[2]];
     };
 
 /**
@@ -40,7 +48,7 @@ export const Login = InterceptSession(async (
   data: { username: string, password: string },
   client: HTTPClient = ApiClient
 ): Promise<[AgentSession | null, number, string | null]> =>
-  await client.GetAsync<AgentSession>(`${baseEndpoint}/login`, data)
+  await client.PostAsync<AgentSession>(`${baseEndpoint}/login`, data)
 );
 
 /**
@@ -49,12 +57,23 @@ export const Login = InterceptSession(async (
  * @param body The JSON object containing the sessionId.
  * @return Response containing the account information or an error message.
  */
-export const Logout = InterceptSession(async (
+export const Logout = async (
   data: { sessionId: string },
   client: HTTPClient = ApiClient
-): Promise<[AgentSession | null, number, string | null]> =>
-  await client.DeleteAsync(`${baseEndpoint}/logout`, data)
-);
+): Promise<[null, number, string | null]> =>
+  await client.DeleteAsync(`${baseEndpoint}/logout`, data);
+
+/**
+ * Endpoint for handling login requests.
+ *
+ * @param body The JSON object containing the sessionId.
+ * @return Response containing the account information or an error message.
+ */
+export const LogoutAll = async (
+  data: { username: string },
+  client: HTTPClient = ApiClient
+): Promise<[null, number, string | null]> =>
+  await client.DeleteAsync(`${baseEndpoint}/logout/all`, data);
 
 /**
  * Endpoint for requesting reset of the password when forgotten

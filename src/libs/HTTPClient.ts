@@ -10,8 +10,8 @@ export default class HTTPClient {
   public set NewHeaders(value: IMap) { this.cachedHeaders = {...this.cachedHeaders, ...value}; }
   public set Header(value: [string, string]) { this.cachedHeaders[value[0]] = value[1]; };
 
-  constructor(uri: string, headers?: IMap) {
-    this.uri = uri;
+  constructor(uri?: string, headers?: IMap) {
+    this.uri = uri || globalThis.origin;
     this.cachedHeaders = {
       // Set default headers here if necessary
       "content-type": "application/json",
@@ -63,8 +63,8 @@ export default class HTTPClient {
     return [json as T, httpResponse.status, null];
   }
 
-  public GetAsync = async <T = any>(route: string, body?: any): Promise<[T | null, number, string | null]> =>
-    await this.actAsync<T>("get", route, body);
+  public GetAsync = async <T = any>(route: string): Promise<[T | null, number, string | null]> =>
+    await this.actAsync<T>("get", route);
 
   public PostAsync = async <T = any>(route: string, body?: any): Promise<[T | null, number, string | null]> =>
     await this.actAsync<T>("post", route, body);

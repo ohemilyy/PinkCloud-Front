@@ -15,7 +15,7 @@ export async function GET() {
 export async function DELETE() {
   const session = await getSession();
 
-  await Logout(session.sessionId);
+  await Logout({ sessionId: session.sessionId });
 
   session.destroy();
   
