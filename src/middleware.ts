@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from 'next/server';
 import { getSession } from './libs/session/manager';
 
 export const config = {
-  matcher: ['/auth/:path*', '/dashboard/:path*', '/su/:path*'],
+  matcher: ['/auth/:path*', '/dash/:path*', '/su/:path*'],
 }
 export async function middleware(req: NextRequest) {
   const session = await getSession();
@@ -16,7 +16,7 @@ export async function middleware(req: NextRequest) {
       break;
 
     // Protected Pages ask you to login first then redirect you back
-    case "dashboard":
+    case "dash":
       if (!session.isLoggedIn)
         return NextResponse.redirect(
           new URL(

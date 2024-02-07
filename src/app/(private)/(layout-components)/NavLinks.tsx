@@ -7,7 +7,7 @@ const NavLinks = () => <>
   <div className="flex-1 navbar-links whitespace-nowrap font-medium text-xl">
       <ul>
           <li>
-              <Link href="/dashboard/backups" title="Backups" className="flex flex-row items-center hide gap-x-4">
+              <Link href="/dash/backups" title="Backups" className="flex flex-row items-center hide gap-x-4">
                   <CiSaveDown2 /> Backups
               </Link>
           </li>
@@ -22,7 +22,7 @@ const NavLinks = () => <>
               </Link>
           </li>
           <li>
-              <Link href="/dashboard/account" title="User Options" className="flex flex-row items-center hide gap-x-4">
+              <Link href="/dash/account" title="User Options" className="flex flex-row items-center hide gap-x-4">
                   <CiUser /> User Options
               </Link>
           </li>
@@ -65,7 +65,7 @@ export default NavLinks;
 // const NavLinks = () => {
 //   const currRoute = usePathname() + useHash();
 //   const navLinks = [
-//     { href: "/dashboard", text: "Dashboard", icon: <FaSatellite className="w-4 h-4" /> },
+//     { href: "/dash", text: "Dashboard", icon: <FaSatellite className="w-4 h-4" /> },
 //     { href: "/blog", text: "Blog", icon: <FaBlog className="w-5 h-5" /> },
 //     { href: "https://uptime.pinkcloud.studio", text: "Uptime", icon: <FaSatelliteDish className="w-5 h-5" /> },
 //     { href: "/services", text: "Services", icon: <FaGlobeAmericas className="w-5 h-5" /> },

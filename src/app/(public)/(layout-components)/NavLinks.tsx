@@ -8,7 +8,7 @@ import { FaGlobeAmericas } from "react-icons/fa";
 const NavLinks = () => {
   const currRoute = usePathname() + useHash();
   const navLinks = [
-    { href: "/dashboard", text: "Dashboard", icon: <FaSatellite className="w-4 h-4" /> },
+    { href: "/dash", text: "Dashboard", icon: <FaSatellite className="w-4 h-4" /> },
     { href: "/blog", text: "Blog", icon: <FaBlog className="w-5 h-5" /> },
     { href: "https://uptime.pinkcloud.studio", text: "Uptime", icon: <FaSatelliteDish className="w-5 h-5" /> },
     { href: "/services", text: "Services", icon: <FaGlobeAmericas className="w-5 h-5" /> },

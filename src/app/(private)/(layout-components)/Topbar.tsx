@@ -30,7 +30,7 @@ const Topbar = () => {
         <MobileNavToggle />
         <SidebarToggle />
         
-        <Logo href={'/dashboard'} className="hidden sm:flex ml-4"/>
+        <Logo href={'/dash'} className="hidden sm:flex ml-4"/>
       </div>
 
       <div>
