@@ -32,4 +32,4 @@ export const newUuid = () => {
   );
 }
 
-export const ApiClient = new HTTPClient(process.env.NEXT_PUBLIC_API_ADDR!, { "Authorization": process.env.API_KEY! });
+export const ApiClient = new HTTPClient(process.env.NEXT_PUBLIC_API_ADDR!, { "X-Api-Key": process.env.API_KEY! });

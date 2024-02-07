@@ -76,6 +76,17 @@ export const LogoutAll = async (
   await client.DeleteAsync(`${baseEndpoint}/logout/all`, data);
 
 /**
+ * Endpoint for updating password.
+ *
+ * @param body The JSON object containing username, current password and new.
+ * @return Response containing the updated account information or an error message.
+ */
+export const UpdatePassword = async (
+  data: { username: string, password: string, newPassword: string },
+  client: HTTPClient = ApiClient
+) => await client.PatchAsync(`${baseEndpoint}/password`, data);
+
+/**
  * Endpoint for requesting reset of the password when forgotten
  *
  * @param body The JSON object containing the email of the user.
@@ -100,14 +111,3 @@ export const ResetPassword = InterceptSession(async (
 ): Promise<[AgentSession | null, number, string | null]> =>
   await client.PutAsync(`${baseEndpoint}/password`, data)
 );
-
-/**
- * Endpoint for updating password.
- *
- * @param body The JSON object containing username, current password and new.
- * @return Response containing the updated account information or an error message.
- */
-export const UpdatePassword = async (
-  data: { username: string, password: string, newPassword: string },
-  client: HTTPClient = ApiClient
-) => await client.PatchAsync(`${baseEndpoint}/password`, data);
