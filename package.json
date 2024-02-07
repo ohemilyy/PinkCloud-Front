@@ -6,17 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "update-db-types": "npx supabase gen types typescript --project-id \"qyyxkkbneewcycarhrey\" > src/libs/supabase/database.types.ts"
+    "lint": "next lint"
   },
   "dependencies": {
     "@sentry/nextjs": "^7.92.0",
-    "@supabase/auth-helpers-nextjs": "^0.8.7",
-    "@supabase/auth-ui-react": "^0.4.7",
-    "@supabase/auth-ui-shared": "^0.1.8",
-    "@supabase/supabase-js": "^2.39.3",
     "@tawk.to/tawk-messenger-react": "^2.0.2",
+    "crypto": "^1.0.1",
     "daisyui": "^4.4.24",
+    "iron-session": "^8.0.1",
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

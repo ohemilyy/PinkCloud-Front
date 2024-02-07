@@ -8,10 +8,14 @@ import { MobileNavToggle } from "@/components/MobileNavbar/component";
 import ShrinkableSearch from "@/components/ShrinkableSearch/component";
 import { SidebarToggle } from "./Sidebar";
 import Logo from "@/components/Logo";
+import useSession from "@/hooks/useSession";
+import { useRouter } from "next/navigation";
 
 const Topbar = () => {
   const [ pfp, setPfp ] = useState<string | null>(null);
-
+  const { logout } = useSession();
+  const { push } = useRouter();
+  
   useEffect(() => {
       // if (status === "authenticated") {
       //     setPfp(null);
@@ -44,9 +48,10 @@ const Topbar = () => {
           className="mt-3 p-4 py-8 bg-base-100 rounded-box w-fit flex flex-col gap-y-2 whitespace-nowrap"
         >
           <Link className="font-bold hover:bg-gray-800 p-4 py-2 rounded-lg" href="/profile">Profile</Link>
-          <form className="font-bold hover:bg-gray-800 p-4 py-2 rounded-lg" action="/api/auth/signout" method="post">
-            <button className="w-full h-full" type="submit">Sign out</button>
-          </form>
+          <button className="w-full h-full" onClick={() => {
+            logout();
+            push("/");
+          }}>Sign out</button>
         </Dropdown>
       </div>
     </div>
