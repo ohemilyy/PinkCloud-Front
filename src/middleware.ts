@@ -18,7 +18,14 @@ export async function middleware(req: NextRequest) {
     // Protected Pages ask you to login first then redirect you back
     case "dashboard":
       if (!session.isLoggedIn)
-        return NextResponse.redirect(new URL('/auth/login?' + new URLSearchParams({ redirect: req.url }), req.url), 302);
+        return NextResponse.redirect(
+          new URL(
+            '/auth/login?' +
+              new URLSearchParams({ redirect: new URL(req.url).pathname }),
+            req.url
+          ),
+          302
+        );
       break;
 
     // Admin Pages
