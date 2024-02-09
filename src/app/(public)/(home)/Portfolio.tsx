@@ -4,12 +4,28 @@ import HashLink from "@/components/HashLink";
 import { InView } from "react-intersection-observer";
 
 const Portfolio = () => {
+  const getImgFromSrc = (src: string) => {
+    const srcSplit = src.split('/');
+    const splittedName = srcSplit[srcSplit.length - 1].split('.');
+    let fileName = splittedName.splice(splittedName.length - 1, 1).join('.');
+    fileName = fileName[0].toUpperCase() + fileName.slice(1);
+    return <Image alt={fileName} src={src} width={800} height={600} className="w-full" />;
+  };
+
   const categories = [
-    { title: "MCCade Games", images: ["/img/mccade-banner.png"] },
+    {
+      title: "MCCade Games",
+      items: [
+        getImgFromSrc('/img/mccade-banner.png'),
+        // <div className="w-full h-full">
+        //   TEST
+        // </div>
+      ]
+    },
   ];
 
   const items = categories.map((category, index) => (
-    <Category key={index} title={category.title} images={category.images} />
+    <Category key={index} title={category.title} items={category.items} />
   ));
 
   return (
@@ -32,8 +48,8 @@ const Portfolio = () => {
   );
 };
 
-const Category = (props: { title: string; images: string[] }) => {
-  const { title, images } = props;
+const Category = (props: { title: string; items: React.ReactNode[] }) => {
+  const { title, items } = props;
 
   return (
     <>
@@ -42,13 +58,9 @@ const Category = (props: { title: string; images: string[] }) => {
       <Carousel
         uId={title.toLowerCase().split(' ').join('-')}
         isArrows={false}
-        items={images.map((src, index) => {
-          const srcSplit = src.split('/');
-          const splittedName = srcSplit[srcSplit.length - 1].split('.');
-          let fileName = splittedName.splice(splittedName.length - 1, 1).join('.');
-          fileName = fileName[0].toUpperCase() + fileName.slice(1);
-          return <Image key={index} alt={fileName} src={src} width={800} height={600} className="w-full" />;
-        })}
+        items={items.map((item, idx) =>
+            <div key={idx} className="w-full h-full">{item}</div>
+        )}
       />
     </>
   );
@@ -59,7 +71,7 @@ const Carousel = (props: { uId?: string; items: JSX.Element[]; isArrows: boolean
   return (
     <div className="w-full">
       <div className="flex flex-col items-center justify-center sm:w-full md:w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-[60%] max-w-[900px] mx-auto">
-        <div className="carousel w-full h-fit flex items-center">
+        <div className="carousel w-full h-fit flex items-stretch">
           {props.items.map((item, index) =>
             <CarouselItem key={index} carouselId={uId} index={index} n={props.items.length} isArrows={props.isArrows} content={item} />
           )}
