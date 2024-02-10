@@ -25,11 +25,8 @@ export default function Hydro() {
             </div>
           </HashLink>
         </span>
-
-        <Console className="p-4 m-0">
-          <pre data-prefix="$ "><code>npm i daisyui</code></pre> 
-          <pre data-prefix="> " className="text-warning"><code>installing...</code></pre> 
-          <pre data-prefix="> " className="text-success"><code>Done!</code></pre>
+        <Console className="m-0">
+          <img className="m-0" src="http://web.archive.org/web/20221031000320im_/https://sparky.ac/assets/img/sparky-ac.png" alt={"Sparky"}></img>
         </Console>
       </span>
     </div>

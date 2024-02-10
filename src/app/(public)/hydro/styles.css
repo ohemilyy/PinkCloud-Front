@@ -11,13 +11,6 @@
     margin: auto;
     text-align: center;
 }
-.imageshowcase{
-    display: block;
-    margin: 0 auto;
-    width: 85%;
-    border: 8px solid #e09b0f;
-    margin-top: 20px;
-}
 .mockup-code {
     --tw-bg-opacity: 1;
     background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
