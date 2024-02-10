@@ -1,0 +1,24 @@
+.hero-p {
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 10px;
+}
+.idk {
+    padding-right: 20px;
+}
+.showcase {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.imageshowcase{
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    border: 8px solid #e09b0f;
+    margin-top: 20px;
+}
+.mockup-code {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+}

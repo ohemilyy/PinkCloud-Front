@@ -4,7 +4,7 @@ import { FaInfinity, FaTerminal, FaDiscord } from "react-icons/fa";
 import { DiDocker } from "react-icons/di";
 import { InView } from "react-intersection-observer";
 import { SiNextdotjs } from "react-icons/si";
-import { LuFileTerminal } from "react-icons/lu";
+import { LuFileTerminal, LuShieldAlert } from "react-icons/lu";
 import HashLink from "@/components/HashLink";
 
 const Services = () => (
@@ -37,6 +37,9 @@ const Services = () => (
       </Card>
       <Card icon={<LuFileTerminal />} title="Infrastructure Development & Consultancy" href={""}>
       PinkCloud Studios excels in infrastructure development and consultancy, providing robust solutions to meet your technical needs. From setting up scalable server architectures to offering expert advice, we ensure a solid foundation for your projects.
+      </Card>
+      <Card icon={<LuShieldAlert />} title="AntiCheat Services" href={"/hydro"}>
+        PinkCloud Studios offers an advanced anticheat to Minecraft and Fivem and Rust servers called Hydro. Hydro has AI and machine learning checks to help defend your servers from cheaters!
       </Card>
     </div>
   </section>
