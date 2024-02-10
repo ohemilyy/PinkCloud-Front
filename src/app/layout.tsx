@@ -1,8 +1,13 @@
 import './globals.css';
 import type { Metadata, ResolvingMetadata } from 'next';
-import { Dosis } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const dosis = Dosis({subsets: ["latin"], variable: "--font-dosis"});
+const dosis = localFont({
+  src: [
+    { path: '../../public/font/Dosis.ttf' },
+  ],
+  variable: "--font-dosis"
+});
 
 export default function RootLayout({
   children,
