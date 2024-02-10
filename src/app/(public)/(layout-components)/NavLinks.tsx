@@ -3,8 +3,7 @@ import useHash from "@/hooks/useHash";
 import HashLink from "@/components/HashLink";
 import { usePathname } from "next/navigation";
 import { FaBlog, FaSatellite, FaSatelliteDish, FaUserAstronaut } from "react-icons/fa6";
-import { FaGlobeAmericas } from "react-icons/fa";
-import { LuShieldAlert } from "react-icons/lu";
+import { HiMiniShieldExclamation } from "react-icons/hi2";
 
 const NavLinks = () => {
   const currRoute = usePathname() + useHash();
@@ -12,7 +11,7 @@ const NavLinks = () => {
     { href: "/dash", text: "Dashboard", icon: <FaSatellite className="w-4 h-4" /> },
     { href: "/blog", text: "Blog", icon: <FaBlog className="w-5 h-5" /> },
     { href: "https://uptime.pinkcloud.studio", text: "Uptime", icon: <FaSatelliteDish className="w-5 h-5" /> },
-    { href: "/hydro", text: "AntiCheat Services", icon: <LuShieldAlert className="w-5 h-5" /> },
+    { href: "/hydro", text: "Anti-Cheat", icon: <HiMiniShieldExclamation className="w-5 h-5 scale-125" /> },
     { href: "/crew", text: "Crew", icon: <FaUserAstronaut className="w-5 h-5" /> },
   ];
 
