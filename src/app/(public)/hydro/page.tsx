@@ -3,6 +3,7 @@ import HashLink from '@/components/HashLink';
 import './styles.css';
 import {FaShoppingCart} from "react-icons/fa";
 import Console from '@/components/Console/component';
+import Image from 'next/image';
 
 export default function Hydro() {
   return (
@@ -26,7 +27,7 @@ export default function Hydro() {
           </HashLink>
         </span>
         <Console className="m-0">
-          <img className="m-0" src="http://web.archive.org/web/20221031000320im_/https://sparky.ac/assets/img/sparky-ac.png" alt={"Sparky"}></img>
+          <Image width={718} height={321} className="m-0" src="http://web.archive.org/web/20221031000320im_/https://sparky.ac/assets/img/sparky-ac.png" alt={"Sparky"}/>
         </Console>
       </span>
     </div>
