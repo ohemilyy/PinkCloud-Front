@@ -1,3 +1,10 @@
+#hydro .cards {
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	height: -moz-fit-content;
+	height: fit-content;
+	max-width: 1410px;
+}
+
 .hero-p {
     font-size: 32px;
     line-height: 40px;
@@ -17,5 +24,13 @@
 }
 .mockup-window .mockup-bar > div {
   height: 1rem !important;
-  box-shadow: 0.75em 0 red, 1.8em 0 yellow, 2.85em 0 lime !important;
+  box-shadow: 1em 0 red, 2.5em 0 yellow, 4em 0 lime !important;
+}
+.stats {
+    text-align: center;
+}
+.smd {
+  border: 2px solid var(--fallback-b1,oklch(var(--b2)/1));
+  border-radius: 15px; 
+  background:  var(--fallback-b1,oklch(var(--b2)/1));
 }
