@@ -3,13 +3,13 @@
 import './styles.css';
 import HashLink from '@/components/HashLink';
 import { FaCloud, FaShoppingCart } from "react-icons/fa";
-import Console from '@/components/Console/component';
 import { Url } from "next/dist/shared/lib/router/router";
 import { MdBrowserUpdated } from "react-icons/md";
 import { InView } from "react-intersection-observer";
 import { FaBoltLightning, FaDiscord, FaFileCode } from 'react-icons/fa6';
 import { CgPerformance } from "react-icons/cg";
 import { SlSupport } from "react-icons/sl";
+import Stats from "./Stats";
 
 export default function Hydro() {
   return (
@@ -24,37 +24,20 @@ export default function Hydro() {
           </h3>
         </span>
 
-        <span className="inline-flex justify-between gap-32">
-          <span className="hero-p inline-flex flex-col justify-center items-start">
-            <strong className="whitespace-nowrap">Try us now!</strong>
+        <div className="hero-p inline-flex justify-center items-center gap-4 mt-4">
+          <h3 className="font-bold whitespace-nowrap">Try us now!</h3>
 
-            <div className="flex justify-center items-center gap-6 mt-4">
-              <Arrow />
+          <Arrow />
 
-              <HashLink href={process.env.NEXT_PUBLIC_DISCORD_INVITE ?? '/'} className="btn btn-outline btn-secondary min-h-fit h-fit px-5 py-2.5">
-                <div className="flex flex-row justify-center items-center pb-0.5 gap-1.5">
-                  <FaDiscord className="mt-0.5 h-5 w-5"/>
-                  <h5>Want a demo?</h5>
-                </div>
-              </HashLink>
+          <HashLink href={process.env.NEXT_PUBLIC_DISCORD_INVITE ?? '/'} className="btn btn-outline btn-secondary min-h-fit h-fit px-5 py-2.5">
+            <div className="flex flex-row justify-center items-center pb-0.5 gap-1.5">
+              <FaDiscord className="mt-0.5 h-5 w-5"/>
+              <h5>Want a demo?</h5>
             </div>
-          </span>
+          </HashLink>
+        </div>
 
-          <Console className="m-0">
-            <div className="col-xxl-10 offset-xxl-1 stats-box">
-              <div className="text-pink-gradient stats">
-                <h1 className="text-pink-gradient stats">
-                    Our Statistics
-                </h1>
-              </div>
-              <p>
-                Total Statistics, updated every 5 hours
-              </p>
-            </div>
-
-            {/*<Image width={718} height={321} className="m-0" src="/img/hydro.png" alt={"Sparky"}/>*/}
-          </Console>
-        </span>
+        <Stats />
       </div>
         
       <div className="flex flex-col items-center gap-8 w-full max-w-[1410px]">
@@ -144,8 +127,8 @@ const Card = (props: { icon: JSX.Element; title: string; children: any; href: Ur
 );
 
 const Arrow = ({ className }: { className?: string }) => (
-  <div className={`flex min-w-fit w-fit ${className}`}>
-    <svg className="mx-[-10.75px] my-[-27.41665px]" width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div className={`flex min-w-fit w-fit ${className || ''}`}>
+    <svg className="mx-[-9.75px] my-[-22.417px]" width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   </div>
