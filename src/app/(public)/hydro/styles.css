@@ -1,8 +1,32 @@
 #hydro .cards {
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-	height: -moz-fit-content;
-	height: fit-content;
-	max-width: 1410px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  height: fit-content;
+}
+@media (max-width: 346px) {
+  #hydro {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 465px) {
+  #hydro .cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+#hydro .cards .card {
+  max-height: 600px;
+}
+#hydro .cards .card .target svg {
+  width: 2.5rem;
+}
+.see-link {
+  transition: none;
+}
+.see-link * {
+  transition: none;
+}
+.see-link:not(:hover) {
+  color: oklch(var(--s));
 }
 
 .hero-p {
