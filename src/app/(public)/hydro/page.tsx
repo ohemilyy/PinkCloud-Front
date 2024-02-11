@@ -7,7 +7,7 @@ import Console from '@/components/Console/component';
 import { Url } from "next/dist/shared/lib/router/router";
 import { MdBrowserUpdated } from "react-icons/md";
 import { InView } from "react-intersection-observer";
-import { FaBoltLightning, FaFileCode } from 'react-icons/fa6';
+import { FaBoltLightning, FaDiscord, FaFileCode } from 'react-icons/fa6';
 import { CgPerformance } from "react-icons/cg";
 import { SlSupport } from "react-icons/sl";
 
@@ -33,8 +33,8 @@ export default function Hydro() {
 
               <HashLink href={process.env.NEXT_PUBLIC_DISCORD_INVITE ?? '/'} className="btn btn-outline btn-secondary min-h-fit h-fit px-5 py-2.5">
                 <div className="flex flex-row justify-center items-center pb-0.5 gap-1.5">
-                  <FaShoppingCart className="mt-0.5 h-5 w-5"/>
-                  <h5>Purchase</h5>
+                  <FaDiscord className="mt-0.5 h-5 w-5"/>
+                  <h5>Interested in a demo?</h5>
                 </div>
               </HashLink>
             </div>
