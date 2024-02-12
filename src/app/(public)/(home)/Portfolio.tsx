@@ -1,7 +1,9 @@
-'use client'; 
+'use client';
+
 import Image from "next/image";
-import HashLink from "@/components/HashLink";
 import { InView } from "react-intersection-observer";
+import HashLink from "@/components/HashLink";
+import Link from "next/link";
 
 const Portfolio = () => {
   const getImgFromSrc = (src: string) => {
@@ -9,7 +11,9 @@ const Portfolio = () => {
     const splittedName = srcSplit[srcSplit.length - 1].split('.');
     let fileName = splittedName.splice(splittedName.length - 1, 1).join('.');
     fileName = fileName[0].toUpperCase() + fileName.slice(1);
-    return <Image alt={fileName} src={src} width={800} height={600} className="w-full" />;
+    return <Link href={"https://mccade.net"}>
+      <Image alt={fileName} src={src} width={800} height={600} className="w-full rounded-lg" />
+    </Link>;
   };
 
   const categories = [
