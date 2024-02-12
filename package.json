@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/joy": "^5.0.0-beta.27",
     "@sentry/nextjs": "^7.92.0",
     "@tawk.to/tawk-messenger-react": "^2.0.2",
     "crypto": "^1.0.1",
