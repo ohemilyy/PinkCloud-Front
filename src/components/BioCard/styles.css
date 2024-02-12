@@ -1,0 +1,9 @@
+.out-of-view {
+  transition: all 0.75s;
+  transform: translateY(40%);
+  opacity: 0;
+}
+.in-view {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}

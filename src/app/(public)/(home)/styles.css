@@ -1,13 +1,3 @@
-.out-of-view {
-  transition: all 0.75s;
-  transform: translateY(40%);
-  opacity: 0;
-}
-.in-view {
-  transform: translateY(0) !important;
-  opacity: 1 !important;
-}
-
 .positioned-divisor::before {
   display: block;
   content: "";
@@ -154,12 +144,6 @@
 }
 /*#endregion*/
 
-/*#region Who*/
-#who .target {
-  @apply out-of-view;
-}
-/*#endregion*/
-
 /*#region Services*/
 #services .cards {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -181,7 +165,9 @@
   max-height: 600px;
 }
 #services .cards .card .target {
-  @apply out-of-view;
+  transition: all 0.75s;
+  transform: translateY(40%);
+  opacity: 0;
 }
 #services .cards .card .target svg {
   width: 2.5rem;
@@ -225,6 +211,8 @@
 
 /*#region FAQ*/
 #faq > div > div > div {
-  @apply out-of-view;
+  transition: all 0.75s;
+  transform: translateY(40%);
+  opacity: 0;
 }
 /*#endregion*/
