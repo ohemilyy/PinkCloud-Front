@@ -7,7 +7,7 @@ export const Management = () => {
                name="PM - Blair R."
                discord="imfanbases"
                email="blair@pinkcloud.studio">
-        Hello everyone! My name is Blair. I am a 18-year-old
+        Hey there! I'm Fanbases and I'm currently the Project Manager at PinkCloud. I oversee and operate the MCCade Games minecraft server which is owned by PinkCloud Studios, in which I act as the Chief Executive Officer of the PinkCloud subsidy MCCade Games. I'm a very experienced project manager, and businessman. Feel free to reach out if you have any questions or queries. 
       </BioCard>
 
       <BioCard img="/img/aurora.png"
