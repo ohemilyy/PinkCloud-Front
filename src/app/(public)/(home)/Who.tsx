@@ -30,11 +30,11 @@ const Who = () => (
       </Card>
 
       <Card img="/img/emilyg.png"
-            name="CEO - Emily G."
+            name="CEO - Luna G."
             discord="ohemilyy"
             github="ohemilyy"
             email="emily@pinkcloud.studio">
-        Hey there, I'm Emily! A 22-year-old transfeminine individual with a deep passion for Astrophysics and Computer Science (C.S.).<br />
+        Hey there, I'm Luna! A 22-year-old transfeminine individual with a deep passion for Astrophysics and Computer Science (C.S.).<br />
         Over the past seven years, I've immersed myself in the world of C.S., gaining a comprehensive understanding of Cybersecurity and Cyber Threat Intelligence. My journey includes both formal education and practical experience, and I'm currently majoring in Astrophysics and C.S.<br />
         As a neurodivergent individual, I bring a unique perspective to the tech realm, advocating for diversity and inclusivity. Eager to stay at the forefront of technology, I'm working towards Red Hat Enterprise Linux certification, aiming to make meaningful contributions to the dynamic field of C.S.
       </Card>
