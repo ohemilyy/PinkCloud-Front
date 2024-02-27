@@ -30,7 +30,7 @@ const Who = () => (
       </Card>
 
       <Card img="/img/emilyg.png"
-            name="CEO - Emily G."
+            name="CEO - Luna G."
             discord="ohemilyy"
             github="ohemilyy"
             email="emily@pinkcloud.studio">
