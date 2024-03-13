@@ -11,11 +11,11 @@ const FAQ = () => (
       {/* TODO: Fix Indents */}
       <Question
         question="What services do we offer?"
-        answer="PinkCloud Studios specializes in a wide range of development services, including web development, software application development, and various other types of development tailored to meet our clients' specific needs."
+        answer="LunarLabs specializes in a wide range of development services, including web development, software application development, and various other types of development tailored to meet our clients' specific needs."
       />
       <Question
         question="What sets us apart from other freelance development teams?"
-        answer="PinkCloud Studios distinguishes itself through a combination of technical excellence, creative solutions, and a client-centric approach. We prioritize understanding our clients' goals to deliver tailored and effective development solutions."
+        answer="LunarLabs distinguishes itself through a combination of technical excellence, creative solutions, and a client-centric approach. We prioritize understanding our clients' goals to deliver tailored and effective development solutions."
       />
       <Question
         question="How do we ensure the security of the developed applications?"
@@ -23,7 +23,7 @@ const FAQ = () => (
       />
       <Question
         question="How do we handle post-launch support and maintenance?"
-        answer="Our commitment to clients extends beyond project completion. PinkCloud Studios provides post-launch support and maintenance services to address any issues, implement updates, and ensure the continued success of the developed applications."
+        answer="Our commitment to clients extends beyond project completion. LunarLabs provides post-launch support and maintenance services to address any issues, implement updates, and ensure the continued success of the developed applications."
       />
     </div>
   </section>

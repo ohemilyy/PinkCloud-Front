@@ -13,7 +13,7 @@ export default function Cookies() {
         <div className="flex flex-col md:gap-y-4 mt-10">
           <h4 className="font-bold text-secondary">1. Introduction</h4>
           <p>
-            Welcome to the PinkCloud Studios website. This Cookie Policy is designed to inform you about our use of cookies and similar technologies when you visit our website. By using our website, you agree to the use of cookies as described in this policy.
+            Welcome to the LunarLabs website. This Cookie Policy is designed to inform you about our use of cookies and similar technologies when you visit our website. By using our website, you agree to the use of cookies as described in this policy.
           </p>
           <h4 className="font-bold text-secondary">2. What are cookies?</h4>
           <p>

@@ -23,23 +23,23 @@ const Services = () => (
     
     <div className="grid auto-rows-fr gap-2 cards w-full max-w-screen-lg mx-auto">
       <Card icon={<FaInfinity />} title="Freelances" href={""}>
-      PinkCloud Studios offers a diverse range of freelance services, specializing in web development, software application development, and various other types of development. Our team is dedicated to providing innovative solutions tailored to meet the unique needs of each client.
+      LunarLabs offers a diverse range of freelance services, specializing in web development, software application development, and various other types of development. Our team is dedicated to providing innovative solutions tailored to meet the unique needs of each client.
       </Card>
       <Card icon={<DiDocker />} title="Application Development" href={""}>
-      PinkCloud Studios specializes in crafting cutting-edge applications tailored to meet your specific needs. Whether you're looking for mobile apps, desktop applications, or custom software solutions, our team is committed to delivering excellence.
+      LunarLabs specializes in crafting cutting-edge applications tailored to meet your specific needs. Whether you're looking for mobile apps, desktop applications, or custom software solutions, our team is committed to delivering excellence.
       </Card>
       <Card icon={<SiNextdotjs />} title="Full-Stack Web Development" href={""}>
-      PinkCloud Studios excels in both frontend and backend web development, ensuring a seamless and powerful online presence for your projects. Our team leverages the latest technologies, including Next.js, to deliver modern and efficient web solutions.      </Card>
+      LunarLabs excels in both frontend and backend web development, ensuring a seamless and powerful online presence for your projects. Our team leverages the latest technologies, including Next.js, to deliver modern and efficient web solutions.      </Card>
       <Card icon={<FaDiscord />} title="Discord Development" href={""}>
-      PinkCloud Studios specializes in Discord development, creating customized solutions to enhance your server's functionality and user experience. Whether it's bots, integrations, or other Discord-related projects, our team is dedicated to bringing your ideas to life.      </Card>
+      LunarLabs specializes in Discord development, creating customized solutions to enhance your server's functionality and user experience. Whether it's bots, integrations, or other Discord-related projects, our team is dedicated to bringing your ideas to life.      </Card>
       <Card icon={<FaTerminal />} title="Infrastructure Management" href={""}>
-      PinkCloud Studios excels in comprehensive infrastructure management, including expert system administration services. We specialize in optimizing the performance, security, and scalability of your systems.
+      LunarLabs excels in comprehensive infrastructure management, including expert system administration services. We specialize in optimizing the performance, security, and scalability of your systems.
       </Card>
       <Card icon={<LuFileTerminal />} title="Infrastructure Development & Consultancy" href={""}>
-      PinkCloud Studios excels in infrastructure development and consultancy, providing robust solutions to meet your technical needs. From setting up scalable server architectures to offering expert advice, we ensure a solid foundation for your projects.
+      LunarLabs excels in infrastructure development and consultancy, providing robust solutions to meet your technical needs. From setting up scalable server architectures to offering expert advice, we ensure a solid foundation for your projects.
       </Card>
       <Card icon={<LuShieldAlert />} title="AntiCheat Services" href={"/hydro"}>
-        PinkCloud Studios offers an advanced anticheat to Minecraft and Fivem and Rust servers called Hydro. Hydro has AI and machine learning checks to help defend your servers from cheaters!
+        LunarLabs offers an advanced anticheat to Minecraft and Fivem and Rust servers called Hydro. Hydro has AI and machine learning checks to help defend your servers from cheaters!
       </Card>
     </div>
   </section>

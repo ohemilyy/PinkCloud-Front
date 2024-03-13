@@ -14,13 +14,13 @@ export default function Careers() {
             Jobs
           </h1>
           <p className="Subtitle text-center">
-            Want to be a part of PinkCloud Studios? View our current openings
+            Want to be a part of LunarLabs? View our current openings
           </p>
           <div className="flex flex-col md:gap-y-4 mt-5">
             <div className="outer-container bg-base-200">
               <h3 className="Heading mt-12 mb-6">Our <span className="text-pink-gradient">Team</span></h3>
               <p className="Paragraph1">
-                The PinkCloud Studio team has been pooling our expertise together for over a year, continuously striving to enhance every aspect of our operations. Our zeal lies in crafting solutions and bringing digital ideas to life. We believe that anyone with a strong motivation to be part of a cutting-edge web development company and a readiness to devote their skills to serving our clientele will find a welcoming environment in our team. All work is conducted remotely, with remuneration varying according to the role. As a member of our diligent crew of system administrators and web developers, you will get a chance to leave your distinct mark on our projects.
+                The LunarLabs team has been pooling our expertise together for over a year, continuously striving to enhance every aspect of our operations. Our zeal lies in crafting solutions and bringing digital ideas to life. We believe that anyone with a strong motivation to be part of a cutting-edge web development company and a readiness to devote their skills to serving our clientele will find a welcoming environment in our team. All work is conducted remotely, with remuneration varying according to the role. As a member of our diligent crew of system administrators and web developers, you will get a chance to leave your distinct mark on our projects.
               </p>
               <h3 className="Heading mt-12 mb-6">General <span className="text-pink-gradient">Expectations</span></h3>
               <p className="mb-2 mt-1 Paragraph1">
@@ -70,7 +70,7 @@ export default function Careers() {
 
             <div className="flex flex-col items-center justify-center text-center w-full h-fit gap-2 mt-4">
               <div className="cloud" />
-              <span className="flex flex-row flex-wrap items-center justify-center gap-2 mt-3"><h2>Ready to join the team at</h2><h2 className="text-rainbow">PinkCloud?</h2></span>
+              <span className="flex flex-row flex-wrap items-center justify-center gap-2 mt-3"><h2>Ready to join the team at</h2><h2 className="text-rainbow">LunarLabs?</h2></span>
               <p>Contact us on Discord, and let's see where destiny takes you.</p>
               <HashLink href={process.env.discordInvite ?? '/'} className="btn btn-outline btn-secondary min-h-fit h-fit px-5 py-2.5 mt-7">
                 <div className="flex flex-row justify-center items-center pb-0.5 gap-1.5">

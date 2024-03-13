@@ -25,8 +25,8 @@ export default function RootLayout({
 
 //#region Metadata
 const url = new URL(process.env.NEXT_PUBLIC_CURR_DOMAIN || '');
-const title = 'PinkCloud - Voyager';
-const description = 'PinkCloud elevates your online presence with our professional freelancers';
+const title = 'LunarLabs- Voyager';
+const description = 'LunarLabs elevates your online presence with our professional freelancers';
 const images: string[] = [
   url.toString() + 'img/website_preview.png'
 ];
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   title: title,
   description: description,
   openGraph: {
-    siteName: 'PinkCloud Studios',
+    siteName: 'LunarLabsStudios',
     type: "website",
-    emails: ['emily@pinkcloud.studio', 'elaina@pinkcloud.studio', 'emilyb@pinkcloud.studio'],
+    emails: ['emily@lunarlabs.cc', 'elaina@lunarlabs.cc', 'emilyb@lunarlabs.cc'],
     locale: 'en_GB',
     url: url,
     title: title,

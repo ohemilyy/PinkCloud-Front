@@ -27,8 +27,8 @@ const Footer = () => (
         <div className="links flex flex-col">
           <h6><b>Services</b></h6>
           <HashLink href="/services">All Services</HashLink>
-          <HashLink href="https://uptime.pinkcloud.studio">Service Status</HashLink>
-          <HashLink href="https://billing.pinkcloud.studio">Billing</HashLink>
+          <HashLink href="https://uptime.lunarlabs.cc">Service Status</HashLink>
+          <HashLink href="https://billing.lunarlabs.cc">Billing</HashLink>
         </div>
       </nav>
     </div>
@@ -38,7 +38,7 @@ const Footer = () => (
         Made <span className="inline-flex items-end">
         with <FaHeart className="text-neutral mx-1 mb-0.5"/> by
         </span> Elaina.
-        &copy; Copyright {`${new Date().getFullYear()}`}, PinkCloud Studios.
+        &copy; Copyright {`${new Date().getFullYear()}`}, LunarLabs.
       </small>
     </div>
   </footer>

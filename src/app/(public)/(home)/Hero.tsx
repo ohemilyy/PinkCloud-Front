@@ -21,7 +21,7 @@ const Hero = () => {
         </h2>
 
         <h1 className="inline-flex flex-nowrap items-end logo-rainbow m-0 p-0">
-          PinkCl<div id="cloudMask" className="mx-0.5 mb-[0.3125rem]" />ud
+          LunarLabs<div id="cloudMask" className="mx-0.5 mb-[0.3125rem]" />
         </h1> 
       </span>
 

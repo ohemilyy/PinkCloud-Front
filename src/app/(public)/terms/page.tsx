@@ -13,10 +13,10 @@ export default function Terms() {
 
         <div className="flex flex-col md:gap-y-4 mt-10">
           <p>
-            Welcome to PinkCloud Studios! By accessing or using our services, you agree to comply with and be bound by these terms.
+            Welcome to LunarLabs! By accessing or using our services, you agree to comply with and be bound by these terms.
           </p>
           <p>
-            These Terms of Service (&quot;Terms&quot;) govern your use of the services provided by PinkCloud Studios (the &quot;Collective&quot;, the &quot;Company&quot;) through our services.
+            These Terms of Service (&quot;Terms&quot;) govern your use of the services provided by LunarLabs (the &quot;Collective&quot;, the &quot;Company&quot;) through our services.
             By accessing and/or using our software and/or website and the services provided through it (collectively, the &quot;Services&quot;), 
             you agree to comply with and be bound by the following terms and conditions of use (&quot;Terms of Service&quot;). If you do not agree to these Terms of Service, you should not use our Services.
           </p>
@@ -32,7 +32,7 @@ export default function Terms() {
           <h4 className="font-bold text-secondary">3. User Accounts </h4>
           <ul className="list-disc list-inside">
             <li>
-              <b>Clients:</b> By contacting PinkCloud Studios, you agree to provide accurate information and adhere to fair business practices. Once we are paid and a Developer is with you, a contract is formed between the Client and Freelancer, and both parties are bound by the terms agreeed upon.
+              <b>Clients:</b> By contacting LunarLabs, you agree to provide accurate information and adhere to fair business practices. Once we are paid and a Developer is with you, a contract is formed between the Client and Freelancer, and both parties are bound by the terms agreeed upon.
             </li>
           </ul>
           <h4 className="font-bold text-secondary">4. Payments</h4>
@@ -107,7 +107,7 @@ export default function Terms() {
           <h4 className="font-bold text-secondary">9. Limitation of Liability</h4>
           <span>
             <h6><b>Disclaimer of Damages</b></h6>
-            <p>To the fullest extent permitted by applicable law, PinkCloud Studios ("Company") shall not be liable for any indirect, incidental, special, consequential, or exemplary damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, arising out of or in connection with the use or inability to use the services provided.</p>
+            <p>To the fullest extent permitted by applicable law, LunarLabs ("Company") shall not be liable for any indirect, incidental, special, consequential, or exemplary damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, arising out of or in connection with the use or inability to use the services provided.</p>
           </span>
           <span>
             <h6><b>Limitation of Direct Damages</b></h6>
@@ -141,7 +141,7 @@ export default function Terms() {
             California internet laws, including but not limited to the California Consumer Privacy Act (CCPA), may also apply to the extent required by applicable law.
           </p>
           <p>
-            If you have any questions about these Terms, please contact us at <a className="text-secondary" href="mailto:info@pinkcloud.studio">info@pinkcloud.studio</a>.
+            If you have any questions about these Terms, please contact us at <a className="text-secondary" href="mailto:info@lunarlabs.cc">info@lunarlabs.cc</a>.
           </p>
         </div>
       </div>
