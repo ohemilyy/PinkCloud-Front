@@ -111,9 +111,7 @@ export default function Terms() {
               Extra fees will be negotiated and applied for each case.
             </li>
           </ul>
-          <p>
-            If you have any questions about these Terms, please contact us at <a className="text-secondary" href="mailto:info@lunarlabs.cc">info@lunarlabs.cc</a>.
-          </p>
+
           <h4 className="font-bold text-secondary">5. Privacy</h4>
           <p>
           We reserve the right to keep our intellectual property hidden. Any malicious interaction with the obfuscated code will result in punitive action determined 
@@ -131,6 +129,9 @@ export default function Terms() {
           <h4 className="font-bold text-secondary">8. Gravity</h4>
           <p>
           Our Discord application is used for licensing purposes and should not be modified, investigated, or redistributed.
+          </p>
+          <p>
+            If you have any questions about these Terms, please contact us at <a className="text-secondary" href="mailto:info@lunarlabs.cc">info@lunarlabs.cc</a>.
           </p>
         </div>
       </div>
